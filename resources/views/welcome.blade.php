@@ -1,88 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - SnapFolio Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-<!-- Favicons -->
-<link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
-<link rel="apple-touch-icon" href="{{ asset('assets/img/apple-touch-icon.png') }}">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<!-- Vendor CSS Files -->
-<link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/vendor/aos/aos.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
-
-<!-- Main CSS File -->
-<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-
-  <!-- =======================================================
-  * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Updated: Jun 13 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="header-container d-flex flex-column align-items-start">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          {{-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> --}}
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-
-  </header>
-
+@extends('layout')
+@section('content')
+    
   <main class="main">
 
     <!-- Hero Section -->
@@ -158,21 +76,21 @@
               </div>
 
               <div class="profile-content">
-                <h3>Marcus Thompson</h3>
+                <h3>Boreil Fobasso</h3>
                 <p class="profession">Creative Director &amp; Developer</p>
 
                 <div class="contact-links">
                   <a href="mailto:marcus@example.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
-                    marcus@example.com
+                    Fobsboreil@gmail.com
                   </a>
-                  <a href="tel:+15551234567" class="contact-item">
+                  <a href="tel:+237690383299" class="contact-item">
                     <i class="bi bi-telephone"></i>
-                    +1 (555) 123-4567
+                    +237-690-383-299
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    San Francisco, CA
+                    Nkolmesseng, Yaoundé, Cameroon
                   </a>
                 </div>
               </div>
@@ -187,18 +105,21 @@
               </div>
 
               <div class="description">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-              </div>
+<p>Passionate and dedicated young mobile and web developer with a keen eye for crafting intuitive and responsive user experiences. Skilled in building modern, efficient applications using the latest technologies, with a strong foundation in both front-end and back-end development.</p>
+
+<p>Committed to continuous learning and improvement, I thrive on solving complex problems and turning innovative ideas into reality. Experienced in collaborating with teams to deliver scalable, maintainable code and exceptional digital products that delight users.</p>
+
+</div>
+
 
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number">150+</div>
+                  <div class="stat-number">10+</div>
                   <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">5+</div>
+                  <div class="stat-number">2+</div>
                   <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-item">
@@ -211,21 +132,21 @@
                 <div class="detail-row">
                   <div class="detail-item">
                     <span class="detail-label">Specialization</span>
-                    <span class="detail-value">UI/UX Design &amp; Development</span>
+                    <span class="detail-value">Development</span>
                   </div>
                   <div class="detail-item">
                     <span class="detail-label">Experience Level</span>
-                    <span class="detail-value">Senior Professional</span>
+                    <span class="detail-value">Professional</span>
                   </div>
                 </div>
                 <div class="detail-row">
                   <div class="detail-item">
                     <span class="detail-label">Education</span>
-                    <span class="detail-value">Computer Science, MIT</span>
+                    <span class="detail-value">2 yrs, Software Engineering training</span>
                   </div>
                   <div class="detail-item">
                     <span class="detail-label">Languages</span>
-                    <span class="detail-value">English, Spanish, French</span>
+                    <span class="detail-value">English,  French</span>
                   </div>
                 </div>
               </div>
@@ -249,7 +170,7 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
+    {{-- <section id="stats" class="stats section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -293,7 +214,7 @@
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section><!-- /Stats Section --> --}}
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
@@ -301,7 +222,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>My technical expertise spans both front-end and back-end development, enabling me to build seamless, high-performance web and mobile applications. I am passionate about mastering new technologies and delivering solutions that are both visually appealing and functionally robust. Below are some of the key skills and tools I work with:</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -313,7 +234,7 @@
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>HTML/CSS</h4>
+                    <h4>HTML/CSS/Javascript</h4>
                     <span class="skill-percentage">95%</span>
                   </div>
                   <div class="progress">
@@ -322,17 +243,7 @@
                   <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
                 </div>
 
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>JavaScript</h4>
-                    <span class="skill-percentage">85%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
-                </div>
-
+                
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
                     <h4>React</h4>
@@ -343,6 +254,17 @@
                   </div>
                   <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
                 </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>React Native</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">xperience with React hooks, state management, and component architecture</div>
+                </div>
+
               </div>
             </div><!-- End Frontend Skills -->
           </div>
@@ -353,33 +275,34 @@
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>Node.js</h4>
-                    <span class="skill-percentage">75%</span>
+                    <h4>PHP</h4>
+                    <span class="skill-percentage">85%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
+                <div class="skill-tooltip">
+                    Backend development and API integration with PHP.
                 </div>
-
+                </div>
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>Python</h4>
-                    <span class="skill-percentage">70%</span>
+                    <h4>Laravel</h4>
+                    <span class="skill-percentage">85%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
+                  <div class="skill-tooltip">Server-side PHP development with Laravel and REST APIs</div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
                     <h4>SQL</h4>
-                    <span class="skill-percentage">65%</span>
+                    <span class="skill-percentage">80%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="skill-tooltip">Database design, optimization, and complex queries</div>
                 </div>
@@ -412,14 +335,15 @@
               </div>
 
               <h3>Professional Summary</h3>
-              <p>Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies to solve complex business challenges.</p>
-
+              <p>
+                Creative and detail-oriented Web and Mobile Developer skilled in Laravel, React.js, JavaScript, and React Native. Experienced in building responsive, user-focused applications with clean code and intuitive UX/UI. Passionate about solving real-world problems and eager to collaborate on impactful projects.
+            </p>
               <h3 class="mt-4">Contact Information</h3>
               <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> 742 Evergreen Terrace, Springfield, MA 02101</li>
-                <li><i class="bi bi-envelope"></i> contact@example.com</li>
-                <li><i class="bi bi-phone"></i> +1 (555) 123-4567</li>
-                <li><i class="bi bi-linkedin"></i> linkedin.com/in/example</li>
+                <li><i class="bi bi-geo-alt"></i> Nkolmesseng, Yaounde, Cameroon</li>
+                <li><i class="bi bi-envelope"></i> Fobsboreil@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +237-690-383-299</li>
+                <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
 
               <div class="skills-animation mt-4">
@@ -436,21 +360,21 @@
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>UI/UX Design</span>
-                    <span>85%</span>
+                    <span>Mobile develoment</span>
+                    <span>75%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Cloud Architecture</span>
-                    <span>90%</span>
+                    <span>Teaching</span>
+                    <span>80%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
@@ -474,46 +398,58 @@
               <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
 
               <div class="resume-item">
-                <h4>Senior Software Architect</h4>
-                <h5>2022 - Present</h5>
-                <p class="company"><i class="bi bi-building"></i> Tech Innovations Inc.</p>
+                <h4>FREELANCE WEB DEVELOPER</h4> 
+                {{-- <h5>2022 - Present</h5> --}}
+                {{-- <p class="company"><i class="bi bi-building"></i> Tech Innovations Inc.</p> --}}
                 <ul>
-                  <li>Lead the architectural design and implementation of enterprise-scale applications</li>
-                  <li>Mentor team of 12 developers and establish technical best practices</li>
-                  <li>Drive adoption of microservices architecture and cloud-native solutions</li>
-                  <li>Reduce system downtime by 75% through improved architecture and monitoring</li>
+                  <li>Freelance Web Developer with hands-on experience building custom websites and applications for individuals and businesses.</li>
+                  <li>Skilled at delivering tailored solutions and managing full project lifecycles.</li>
+                  <li>Committed to client satisfaction through responsive design and clean, efficient code.</li>
+
                 </ul>
               </div>
 
               <div class="resume-item">
-                <h4>Lead Developer</h4>
-                <h5>2019 - 2022</h5>
-                <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p>
+                <h4>Assistant Developer</h4>
+                {{-- <h5>2019 - 2022</h5> --}}
+                {{-- <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p> --}}
                 <ul>
-                  <li>Spearheaded development of company's flagship product reaching 1M+ users</li>
-                  <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
-                  <li>Managed team of 8 developers across multiple projects</li>
-                  <li>Increased code test coverage from 45% to 90%</li>
+                  <li>Served as Assistant Web and Mobile Developer on EDUCAM, a GCE revision platform.</li>
+                  <li>Contributed to the design and development of both web and Android applications.</li>
+                  <li>Collaborated with a team to implement features enhancing student learning experiences.</li>
+                  <li>Ensured responsive design, smooth navigation, and content accessibility across devices.</li>
+
                 </ul>
               </div>
-            </div>
+              <div class="resume-item">
+                  <h4>Independent Software Developer</h4>
+                  {{-- <h5>2019 - 2022</h5> --}}
+                  {{-- <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p> --}}
+                  <ul>
+                    <li>Independent Web Developer focused on solving real-world problems through code.</li>
+                    <li>Developed personal projects including a comprehensive school management system and a community saving pools (tontines) software solution.</li>
+                    <li>Experienced in building full-stack applications from the ground up with an emphasis on usability, efficiency, and real-life impact.</li>
+      
+                  </ul>
+                </div>
+              </div>
 
             <!-- Education Section -->
             <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
               <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
 
               <div class="resume-item">
-                <h4>Master of Science in Computer Science</h4>
-                <h5>2017 - 2019</h5>
-                <p class="company"><i class="bi bi-building"></i> Stanford University</p>
-                <p>Specialized in Artificial Intelligence and Machine Learning. Graduated with honors.</p>
+                <h4>2nd Year Software Engineering Training</h4>
+                <h5>2024 - 2025</h5>
+                <p class="company"><i class="bi bi-building"></i> Azimut higher institute</p>
+                <p>Currently pursuing 2nd year of Software Engineering training at Azimut for the 2024-2025 academic year.</p>
               </div>
 
               <div class="resume-item">
-                <h4>Bachelor of Science in Software Engineering</h4>
-                <h5>2013 - 2017</h5>
-                <p class="company"><i class="bi bi-building"></i> MIT</p>
-                <p>Dean's List all semesters. Led university's coding club.</p>
+                <h4>GCE Advanced Level in Sciences</h4>
+                <h5>2022-2023</h5>
+                <p class="company"><i class="bi bi-building"></i> GBHS Yaoundé</p>
+                <p>Completed Advanced Level studies in sciences at Government Bilingual High School Yaoundé.</p>
               </div>
             </div>
 
@@ -522,17 +458,19 @@
               <h3><i class="bi bi-award me-2"></i>Certifications</h3>
 
               <div class="resume-item">
-                <h4>AWS Certified Solutions Architect - Professional</h4>
+                <h4>W3Schools HTML and CSS Certification</h4>
                 <h5>2023</h5>
               </div>
 
               <div class="resume-item">
-                <h4>Google Cloud Professional Architect</h4>
-                <h5>2022</h5>
+                <h4>W3Schools SQL Certification</h4>
+                <h5>2024</h5>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
 
       </div>
 
@@ -544,7 +482,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Explore a curated selection of my web, mobile, and design projects. Each project demonstrates my commitment to quality, creativity, and delivering real value to clients. From innovative web applications to engaging mobile experiences and creative branding, my portfolio highlights the diverse skills and solutions I bring to every collaboration.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -556,10 +494,10 @@
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-photography">Photography</li>
+                  {{-- <li data-filter=".filter-photography">Photography</li>
                   <li data-filter=".filter-design">Design</li>
                   <li data-filter=".filter-automotive">Automotive</li>
-                  <li data-filter=".filter-nature">Nature</li>
+                  <li data-filter=".filter-nature">Nature</li> --}}
                 </ul>
               </div>
             </div>
@@ -572,18 +510,18 @@
                     <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Capturing Moments</h4>
+                        <span class="category">App development</span>
+                        <h4>FobsSMS</h4>
                         <div class="portfolio-links">
                           <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href={{url("/FobsSMS")}} title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div><!-- End Portfolio Item -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                {{-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
@@ -645,18 +583,18 @@
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- End Portfolio Item --> --}}
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Digital Experience</h4>
+                        <span class="category">App Development</span>
+                        <h4>EDUCAM</h4>
                         <div class="portfolio-links">
                           <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="{{url("/Educam")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -679,7 +617,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Discover a range of services designed to elevate your business, enhance your brand, and accelerate your digital transformation. From creative branding and design systems to robust digital platforms and growth strategies, I deliver solutions tailored to your unique goals.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -689,8 +627,8 @@
             <div class="col-lg-8 col-md-12">
               <div class="service-intro">
                 <h2 class="service-heading">
-                  <div>Innovative business</div>
-                  <div><span>performance solutions</span></div>
+                  <div>Future Oriented</div>
+                  <div><span>Business Solutions</span></div>
                 </h2>
               </div>
             </div>
@@ -712,54 +650,54 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-palette"></i>
+                <i class="bi bi-phone"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Creative <span>branding</span>
+                <a href="#">
+                  Mobile <span>Development</span>
                 </a>
               </h3>
               <p>
-                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
+                Building robust, user-friendly mobile applications for Android and iOS using modern frameworks like React Native. Focused on delivering seamless user experiences and high performance.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-gem"></i>
+                <i class="bi bi-laptop"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Design <span>systems</span>
+                <a href="#">
+                  Web <span>Development</span>
                 </a>
               </h3>
               <p>
-                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
+                Creating modern, responsive websites and web applications using technologies like Laravel, PHP, JavaScript, and React. Emphasis on clean code, scalability, and intuitive interfaces.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
+                <i class="bi bi-mortarboard"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Marketing <span>strategies</span>
+                <a href="#">
+                  Technical <span>Instruction</span>
                 </a>
               </h3>
               <p>
-                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
+                Delivering engaging and practical training sessions in web and mobile development. Helping students and teams master programming concepts, frameworks, and best practices.
               </p>
             </div>
           </div>
@@ -768,16 +706,16 @@
               <div class="service-icon">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Digital <span>platforms</span>
+                <a href="#">
+                  API <span>Integration</span>
                 </a>
               </h3>
               <p>
-                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
+                Integrating third-party APIs and building custom RESTful APIs to connect applications and enhance functionality across platforms.
               </p>
             </div>
           </div>
@@ -786,34 +724,34 @@
               <div class="service-icon">
                 <i class="bi bi-graph-up"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Growth <span>acceleration</span>
+                <a href="#">
+                  Project <span>Consulting</span>
                 </a>
               </h3>
               <p>
-                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl fringilla.
+                Advising on digital strategy, technology stack selection, and best practices for web and mobile projects to ensure successful outcomes.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-camera-video"></i>
+                <i class="bi bi-people"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
-                <a href="service-details.html">
-                  Media <span>solutions</span>
+                <a href="#">
+                  Mentorship & <span>Support</span>
                 </a>
               </h3>
               <p>
-                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
+                Providing mentorship and ongoing support for junior developers and teams, fostering growth and continuous improvement in software development.
               </p>
             </div>
           </div>
@@ -829,8 +767,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>Hear what clients and collaborators have to say about working with me—real feedback on project outcomes, professionalism, and the impact of my solutions.</p></div><!-- End Section Title -->
 
       <div class="container">
 
@@ -956,8 +893,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>If you’d like to discuss a project, collaborate, or just say hello, feel free to reach out using the form below or through my contact details. I look forward to connecting with you!</p></div><!-- End Section Title -->
 
       <div class="container">
 
@@ -965,7 +901,7 @@
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+                <p>If you have a project in mind, want to collaborate, or just want to say hello, feel free to contact me using the details below.</p>
 
               <div class="info-item">
                 <div class="icon-box">
@@ -973,8 +909,8 @@
                 </div>
                 <div class="content">
                   <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>Nkolmesseng</p>
+                  <p>Yaounde, Cameroon</p>
                 </div>
               </div>
 
@@ -984,8 +920,8 @@
                 </div>
                 <div class="content">
                   <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <p>+237-690-383-299</p>
+                  {{-- <p>+1 6678 254445 41</p> --}}
                 </div>
               </div>
 
@@ -995,8 +931,8 @@
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p>fobsboreil@gmail.com</p>
+                  {{-- <p>contact@example.com</p> --}}
                 </div>
               </div>
             </div>
@@ -1005,7 +941,7 @@
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+                <p>If you have any questions, project ideas, or just want to connect, please fill out the form below. I look forward to hearing from you!</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="row gy-4">
@@ -1047,46 +983,4 @@
     </section><!-- /Contact Section -->
 
   </main>
-
-  <footer id="footer" class="footer position-relative">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-<!-- Vendor JS Files -->
-<script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-<script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
-<script src="{{ asset('assets/vendor/typed.js/typed.umd.js') }}"></script>
-<script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-<script src="{{ asset('assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
-<script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-
-<!-- Main JS File -->
-<script src="{{ asset('assets/js/main.js') }}"></script>
-
-</body>
-
-</html>
+@endsection
