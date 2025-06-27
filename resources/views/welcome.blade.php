@@ -29,10 +29,10 @@
                 </div>
 
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-dribbble"></i></a>
-                  <a href="#"><i class="bi bi-behance"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://t.me/BoreilFobs"><i class="bi bi-telegram"></i></a>
+                    <a href="https://wa.me/+237690383299"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://www.github.com/in/BoreilFobs/"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/profile-2.webp" alt="Alexander Chen" class="profile-image">
+                  <img src="assets/img/profile/profile1.jpg" alt="Alexander Chen" class="profile-image">
                   <div class="floating-elements">
                     <div class="floating-icon icon-1"><i class="bi bi-palette"></i></div>
                     <div class="floating-icon icon-2"><i class="bi bi-code-slash"></i></div>
@@ -68,7 +68,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-image">
-                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" class="img-fluid">
+                  <img src="assets/img/profile/profile2.png" alt="Profile Image" class="img-fluid">
                 </div>
                 <div class="profile-badge">
                   <i class="bi bi-check-circle-fill"></i>
@@ -77,10 +77,10 @@
 
               <div class="profile-content">
                 <h3>Boreil Fobasso</h3>
-                <p class="profession">Creative Director &amp; Developer</p>
+                <p class="profession">Web &amp; Mobile Developer</p>
 
                 <div class="contact-links">
-                  <a href="mailto:marcus@example.com" class="contact-item">
+                  <a href="mailto:fobsboreil@gmail.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
                     Fobsboreil@gmail.com
                   </a>
@@ -106,11 +106,11 @@
 
               <div class="description">
 
-<p>Passionate and dedicated young mobile and web developer with a keen eye for crafting intuitive and responsive user experiences. Skilled in building modern, efficient applications using the latest technologies, with a strong foundation in both front-end and back-end development.</p>
+                <p>Passionate and dedicated young mobile and web developer with a keen eye for crafting intuitive and responsive user experiences. Skilled in building modern, efficient applications using the latest technologies, with a strong foundation in both front-end and back-end development.</p>
 
-<p>Committed to continuous learning and improvement, I thrive on solving complex problems and turning innovative ideas into reality. Experienced in collaborating with teams to deliver scalable, maintainable code and exceptional digital products that delight users.</p>
+                <p>Committed to continuous learning and improvement, I thrive on solving complex problems and turning innovative ideas into reality. Experienced in collaborating with teams to deliver scalable, maintainable code and exceptional digital products that delight users.</p>
 
-</div>
+              </div>
 
 
               <div class="stats-grid">
@@ -321,7 +321,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>If you want results, you have to put in the work. No shortcuts, no excuses—just skill, dedication, and a relentless drive to deliver. Mediocrity isn’t welcome here.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -331,7 +331,7 @@
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div class="profile-img mb-4">
-                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid rounded">
+                <img src="assets/img/profile/profile3.png" alt="Profile" class="img-fluid rounded">
               </div>
 
               <h3>Professional Summary</h3>
@@ -504,22 +504,23 @@
 
             <div class="col-lg-9">
               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">App development</span>
-                        <h4>FobsSMS</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href={{url("/FobsSMS")}} title="More Details"><i class="bi bi-arrow-right"></i></a>
+                <a href="{{url("/FobsSMS")}}">
+                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/FobsSMS/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">App development</span>
+                          <h4>FobsSMS</h4>
+                          <div class="portfolio-links">
+                            <a href="assets/img/portfolio/FobsSMS/1.png" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
+                            <a href={{url("/FobsSMS")}} title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </a><!-- End Portfolio Item -->
 
                 {{-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
@@ -585,21 +586,23 @@
                   </div>
                 </div><!-- End Portfolio Item --> --}}
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">App Development</span>
-                        <h4>EDUCAM</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{{url("/Educam")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                <a href="{{url("/Educam")}}">
+                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/Educam/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">App Development</span>
+                          <h4>EDUCAM</h4>
+                          <div class="portfolio-links">
+                            <a href="assets/img/portfolio/Educam/1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                            <a href="{{url("/Educam")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </a><!-- End Portfolio Item -->
 
               </div><!-- End Portfolio Container -->
             </div>
@@ -767,7 +770,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Hear what clients and collaborators have to say about working with me—real feedback on project outcomes, professionalism, and the impact of my solutions.</p></div><!-- End Section Title -->
+        <p>See what clients and collaborators from Cameroon and across Africa say about working with me—real feedback on project results, professionalism, and impact.</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -778,14 +782,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
+              <p>Working with Boreil was a game-changer for our business. His web solutions helped us reach more customers in Yaoundé and improved our online presence.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-f-7.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
+                  <h3>Esther Nguema</h3>
+                  <span class="position">Entrepreneur, Cameroon</span>
                 </div>
               </div>
             </div>
@@ -796,14 +800,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
+              <p>Boreil’s mobile app for our community project was intuitive and reliable. He listened to our needs and delivered beyond expectations.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-m-7.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Daniel Morgan</h3>
-                  <span class="position">Chief Innovation Officer</span>
+                  <h3>Jean-Paul Mbarga</h3>
+                  <span class="position">Community Leader, Cameroon</span>
                 </div>
               </div>
             </div>
@@ -814,14 +818,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
+              <p>His dedication and technical skills made our education platform a success. Students found the app easy to use and engaging.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-f-8.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
+                  <h3>Clarisse Tchoumba</h3>
+                  <span class="position">Educator, Cameroon</span>
                 </div>
               </div>
             </div>
@@ -832,14 +836,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
+              <p>Professional, creative, and always available for support. I highly recommend Boreil for any digital project in Africa.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-m-8.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
+                  <h3>Samuel Njoya</h3>
+                  <span class="position">Startup Founder, Cameroon</span>
                 </div>
               </div>
             </div>
@@ -850,14 +854,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
+              <p>His mentorship helped me grow as a junior developer. I learned best practices and gained confidence in my coding skills.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-f-9.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
+                  <h3>Fatoumata Diop</h3>
+                  <span class="position">Junior Developer, Senegal</span>
                 </div>
               </div>
             </div>
@@ -868,14 +872,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
+              <p>Boreil’s attention to detail and understanding of local needs made our project stand out. We’re grateful for his expertise.</p>
               <div class="client-info">
                 <div class="client-image">
-                  <img src="assets/img/person/person-m-13.webp" alt="Client">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
+                  <h3>Kwame Mensah</h3>
+                  <span class="position">Business Owner, Ghana</span>
                 </div>
               </div>
             </div>

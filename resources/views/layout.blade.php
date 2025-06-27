@@ -72,11 +72,11 @@
       </nav>
 
       <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/BoreilFobs" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://facebook.com/BoreilFobs" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/boreil_fobs/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/+237690383299" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>

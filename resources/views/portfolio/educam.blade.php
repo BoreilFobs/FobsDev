@@ -9,7 +9,7 @@
         <h1 class="mb-2 mb-lg-0">Educam</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href={{url("/")}}>Home</a></li>
             <li class="current">Educam</li>
           </ol>
         </nav>
@@ -45,15 +45,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Educam/1.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Educam/2.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/Educam/3.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -68,7 +68,7 @@
                 <li><strong>Category</strong>: Web and Mobile Development</li>
                 <li><strong>Client</strong>: Atoh Francis</li>
                 <li><strong>Project date</strong>: 24 Mai, 2025</li>
-                <li><strong>Project URL</strong>: <a href="#" target="_blank">www.educam.helonyxe.com</a></li>
+                <li><strong>Project URL</strong>: <a href="https://www.educam.helonyxe.com" target="_blank">www.educam.helonyxe.com</a></li>
               </ul>
             </div>
           </div>

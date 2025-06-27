@@ -9,7 +9,7 @@
         <h1 class="mb-2 mb-lg-0">FobsSMS</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{{url("/")}}">Home</a></li>
             <li class="current">FobsSMS</li>
           </ol>
         </nav>
@@ -45,15 +45,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FobsSMS/1.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FobsSMS/2.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/FobsSMS/3.png" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
