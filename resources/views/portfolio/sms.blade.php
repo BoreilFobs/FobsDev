@@ -68,7 +68,7 @@
                 <li><strong>Category</strong>: Web and Mobile Development</li>
                 <li><strong>Client</strong>: Personal</li>
                 <li><strong>Project date</strong>: 01 june, 2025</li>
-                <li><strong>Project URL</strong>: <a href="#" target="_blank">www.sms.FobsDev.com</a></li>
+                <li><strong>Project URL</strong>: <a href="www.sms.fobs.dev" target="_blank">www.sms.Fobs.dev</a></li>
               </ul>
             </div>
           </div>
