@@ -31,7 +31,7 @@
                 <div class="social-links">
                     <a href="https://t.me/BoreilFobs"><i class="bi bi-telegram"></i></a>
                     <a href="https://wa.me/+237690383299"><i class="bi bi-whatsapp"></i></a>
-                  <a href="https://www.github.com/in/BoreilFobs/"><i class="bi bi-github"></i></a>
+                  <a href="https://www.github.com/BoreilFobs/"><i class="bi bi-github"></i></a>
                   <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -152,11 +152,11 @@
               </div>
 
               <div class="cta-section">
-                <a href="#" class="btn btn-primary">
+                <a href="{{ asset('/resume/Fobs.pdf') }}" class="btn btn-primary" target="_blank" rel="noopener">
                   <i class="bi bi-download"></i>
                   Download Resume
                 </a>
-                <a href="#" class="btn btn-outline">
+                <a href="https://wa.me/+237690383299" class="btn btn-outline">
                   <i class="bi bi-chat-dots"></i>
                   Let's Talk
                 </a>
@@ -640,7 +640,7 @@
                 <p>
                   We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
                 </p>
-                <a href="services.html" class="service-btn">
+                <a href="#services" class="service-btn">
                   View All Services
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -788,14 +788,14 @@
                   <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Esther Nguema</h3>
-                  <span class="position">Entrepreneur, Cameroon</span>
+                  <h3>Atoh Francis</h3>
+                  <span class="position">Developer, Cameroon</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+          {{-- <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-content">
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
@@ -811,9 +811,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+          {{-- <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
             <div class="testimonial-content">
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
@@ -829,7 +829,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
             <div class="testimonial-content">
@@ -842,14 +842,14 @@
                   <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Samuel Njoya</h3>
+                  <h3>SDonguepe Steeve</h3>
                   <span class="position">Startup Founder, Cameroon</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+          {{-- <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
             <div class="testimonial-content">
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
@@ -865,7 +865,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> --}}
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
             <div class="testimonial-content">
@@ -878,8 +878,8 @@
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Kwame Mensah</h3>
-                  <span class="position">Business Owner, Ghana</span>
+                  <h3>Yotta Jovence</h3>
+                  <span class="position">Devops, Cameroon</span>
                 </div>
               </div>
             </div>
