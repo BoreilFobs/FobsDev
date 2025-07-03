@@ -68,7 +68,7 @@
                 <li><strong>Category</strong>: Web and Mobile Development</li>
                 <li><strong>Client</strong>: Atoh Francis</li>
                 <li><strong>Project date</strong>: 24 Mai, 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://www.educam.helonyxe.com" target="_blank">www.educam.helonyxe.com</a></li>
+                <li><strong>Project URL</strong>: <a href="https://educam.helonyxe.com" target="_blank">www.educam.helonyxe.com</a></li>
               </ul>
             </div>
           </div>

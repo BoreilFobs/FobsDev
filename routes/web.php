@@ -11,3 +11,6 @@ Route::get('/Educam', function () {
 Route::get('/FobsSMS', function () {
     return view('portfolio.sms');
 });
+Route::get('/glowandchic', function () {
+    return view('portfolio.glowandchic');
+});

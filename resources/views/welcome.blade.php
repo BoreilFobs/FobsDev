@@ -522,69 +522,6 @@
                   </div>
                 </a><!-- End Portfolio Item -->
 
-                {{-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Woodcraft Design</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Automotive</span>
-                        <h4>Classic Beauty</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-4.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Nature</span>
-                        <h4>Natural Growth</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-4.webp" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Urban Stories</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item --> --}}
 
                 <a href="{{url("/Educam")}}">
                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
@@ -597,6 +534,24 @@
                           <div class="portfolio-links">
                             <a href="assets/img/portfolio/Educam/1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
                             <a href="{{url("/Educam")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a><!-- End Portfolio Item -->
+
+                 <a href="{{url("/glowandchic")}}">
+                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/portfolio/glowandchic/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">Web Development</span>
+                          <h4>Glow & Chic</h4>
+                          <div class="portfolio-links">
+                            <a href="assets/img/portfolio/glowandchic/1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
+                            <a href="{{url("/glowandchic")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
                           </div>
                         </div>
                       </div>
