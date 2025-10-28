@@ -20,7 +20,7 @@
               <div class="hero-text">
                 <h1>Fobs<span class="accent-text">Dev</span></h1>
                 <h2>Boreil Fobasso</h2>
-                <p class="lead">I'm a <span class="typed" data-typed-items="Web Developer, Mobile Developer, Creative Director, ML Engineer "></span></p>
+                <p class="lead">I'm a <span class="typed" data-typed-items="Web Developer, Mobile Developer, ML Engineer, Creative Director"></span></p>
                 <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
 
                 <div class="hero-actions">
