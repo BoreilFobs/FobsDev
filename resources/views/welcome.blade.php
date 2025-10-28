@@ -77,12 +77,12 @@
 
               <div class="profile-content">
                 <h3>Boreil Fobasso</h3>
-                <p class="profession">Web &amp; Mobile Developer</p>
+                <p class="profession">Web &amp; Mobile Developer, ML Engineer</p>
 
                 <div class="contact-links">
                   <a href="mailto:fobsboreil@gmail.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
-                    Fobsboreil@gmail.com
+                    fobsboreil@gmail.com
                   </a>
                   <a href="tel:+237690383299" class="contact-item">
                     <i class="bi bi-telephone"></i>
@@ -142,7 +142,7 @@
                 <div class="detail-row">
                   <div class="detail-item">
                     <span class="detail-label">Education</span>
-                    <span class="detail-value">2 yrs, Software Engineering training</span>
+                    <span class="detail-value">HND in Software Engineering</span>
                   </div>
                   <div class="detail-item">
                     <span class="detail-label">Languages</span>
@@ -341,7 +341,7 @@
               <h3 class="mt-4">Contact Information</h3>
               <ul class="contact-info list-unstyled">
                 <li><i class="bi bi-geo-alt"></i> Nkolmesseng, Yaounde, Cameroon</li>
-                <li><i class="bi bi-envelope"></i> Fobsboreil@gmail.com</li>
+                <li><i class="bi bi-envelope"></i> fobsboreil@gmail.com</li>
                 <li><i class="bi bi-phone"></i> +237-690-383-299</li>
                 <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
@@ -439,7 +439,7 @@
               <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
 
               <div class="resume-item">
-                <h4>2nd Year Software Engineering Training</h4>
+                <h4>HND in Software Engineering</h4>
                 <h5>2024 - 2025</h5>
                 <p class="company"><i class="bi bi-building"></i> Azimut higher institute</p>
                 <p>Currently pursuing 2nd year of Software Engineering training at Azimut for the 2024-2025 academic year.</p>
@@ -797,7 +797,7 @@
                   <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>SDonguepe Steeve</h3>
+                  <h3>Donguepe Steeve</h3>
                   <span class="position">Startup Founder, Cameroon</span>
                 </div>
               </div>
