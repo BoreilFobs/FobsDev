@@ -86,7 +86,7 @@
                   </a>
                   <a href="tel:+237690383299" class="contact-item">
                     <i class="bi bi-telephone"></i>
-                    +237-690-383-299
+                    +237 690 383 299
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
@@ -342,7 +342,7 @@
               <ul class="contact-info list-unstyled">
                 <li><i class="bi bi-geo-alt"></i> Nkolmesseng, Yaounde, Cameroon</li>
                 <li><i class="bi bi-envelope"></i> fobsboreil@gmail.com</li>
-                <li><i class="bi bi-phone"></i> +237-690-383-299</li>
+                <li><i class="bi bi-phone"></i> +237 690 383 299</li>
                 <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
 
@@ -879,7 +879,7 @@
                 </div>
                 <div class="content">
                   <h4>Phone Number</h4>
-                  <p>+237-690-383-299</p>
+                  <p>+237 690 383 299</p>
                   {{-- <p>+1 6678 254445 41</p> --}}
                 </div>
               </div>
