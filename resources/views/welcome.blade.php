@@ -41,7 +41,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/profile1.jpg" alt="Alexander Chen" class="profile-image">
+                  <img src="assets/img/profile/Proile-main.png" alt="Alexander Chen" class="profile-image">
                   <div class="floating-elements">
                     <div class="floating-icon icon-1"><i class="bi bi-palette"></i></div>
                     <div class="floating-icon icon-2"><i class="bi bi-code-slash"></i></div>
@@ -331,7 +331,7 @@
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div class="profile-img mb-4">
-                <img src="assets/img/profile/profile3.png" alt="Profile" class="img-fluid rounded">
+                <img src="assets/img/profile/profile1.jpg" alt="Profile" class="img-fluid rounded">
               </div>
 
               <h3>Professional Summary</h3>
