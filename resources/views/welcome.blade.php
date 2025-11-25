@@ -504,61 +504,29 @@
 
             <div class="col-lg-9">
               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <a href="{{url("/FobsSMS")}}">
-                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/portfolio/FobsSMS/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                      <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">App development</span>
-                          <h4>FobsSMS</h4>
-                          <div class="portfolio-links">
-                            <a href="assets/img/portfolio/FobsSMS/1.png" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                            <a href={{url("/FobsSMS")}} title="More Details"><i class="bi bi-arrow-right"></i></a>
+                @forelse($portfolioItems as $item)
+                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item">
+                    <a href="{{ route('portfolio.show', $item->slug) }}">
+                      <div class="portfolio-wrap">
+                        <img src="{{ asset($item->main_image) }}" class="img-fluid" alt="{{ $item->title }}" loading="lazy">
+                        <div class="portfolio-info">
+                          <div class="content">
+                            <span class="category">{{ $item->category }}</span>
+                            <h4>{{ $item->title }}</h4>
+                            <div class="portfolio-links">
+                              <a href="{{ asset($item->main_image) }}" class="glightbox" title="{{ $item->title }}"><i class="bi bi-plus-lg"></i></a>
+                              <a href="{{ route('portfolio.show', $item->slug) }}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                </a><!-- End Portfolio Item -->
-
-
-                <a href="{{url("/Educam")}}">
-                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/portfolio/Educam/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                      <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">App Development</span>
-                          <h4>EDUCAM</h4>
-                          <div class="portfolio-links">
-                            <a href="assets/img/portfolio/Educam/1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                            <a href="{{url("/Educam")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                @empty
+                  <div class="col-12">
+                    <p class="text-center">No portfolio items available at the moment.</p>
                   </div>
-                </a><!-- End Portfolio Item -->
-
-                 <a href="{{url("/glowandchic")}}">
-                  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/portfolio/glowandchic/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                      <div class="portfolio-info">
-                        <div class="content">
-                          <span class="category">Web Development</span>
-                          <h4>Glow & Chic</h4>
-                          <div class="portfolio-links">
-                            <a href="assets/img/portfolio/glowandchic/1.png" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                            <a href="{{url("/glowandchic")}}" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a><!-- End Portfolio Item -->
-
+                @endforelse
               </div><!-- End Portfolio Container -->
             </div>
           </div>
