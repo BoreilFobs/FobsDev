@@ -20,17 +20,17 @@
               <div class="hero-text">
                 <h1>Fobs<span class="accent-text">Dev</span></h1>
                 <h2>Boreil Fobasso</h2>
-                <p class="lead">I'm a <span class="typed" data-typed-items="Web Developer, Mobile Developer, ML Engineer, Creative Director"></span></p>
-                <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
+                <p class="lead">Je suis <span class="typed" data-typed-items="Développeur Web, Développeur Mobile, Créateur de Sites Vitrines"></span></p>
+                <p class="description">Spécialisé dans la création de sites vitrines professionnels de qualité, livrés en 7 jours. Basé en Italie, je transforme votre vision en une présence digitale élégante et performante.</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                  <a href="#portfolio" class="btn btn-primary">Voir Mes Réalisations</a>
+                  <a href="#contact" class="btn btn-outline">Demander un Devis</a>
                 </div>
 
                 <div class="social-links">
                     <a href="https://t.me/BoreilFobs"><i class="bi bi-telegram"></i></a>
-                    <a href="https://wa.me/+237690383299"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/+393511262532"><i class="bi bi-whatsapp"></i></a>
                   <a href="https://www.github.com/BoreilFobs/"><i class="bi bi-github"></i></a>
                   <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/"><i class="bi bi-linkedin"></i></a>
                 </div>
@@ -77,20 +77,20 @@
 
               <div class="profile-content">
                 <h3>Boreil Fobasso</h3>
-                <p class="profession">Web &amp; Mobile Developer, ML Engineer</p>
+                <p class="profession">Développeur Web &amp; Mobile, Créateur de Sites Vitrines</p>
 
                 <div class="contact-links">
                   <a href="mailto:fobsboreil@gmail.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
                     fobsboreil@gmail.com
                   </a>
-                  <a href="tel:+237690383299" class="contact-item">
+                  <a href="tel:+393511262532" class="contact-item">
                     <i class="bi bi-telephone"></i>
-                    +237 690 383 299
+                    +39 351 126 2532
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    Nkolmesseng, Yaoundé, Cameroon
+                    Rome, Italie
                   </a>
                 </div>
               </div>
@@ -100,53 +100,53 @@
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
               <div class="section-header">
-                <span class="badge-text">Get to Know Me</span>
-                <h2>Passionate About Creating Digital Experiences</h2>
+                <span class="badge-text">À Propos de Moi</span>
+                <h2>Passionné par la Création d'Expériences Digitales</h2>
               </div>
 
               <div class="description">
 
-                <p>Passionate and dedicated young mobile and web developer with a keen eye for crafting intuitive and responsive user experiences. Skilled in building modern, efficient applications using the latest technologies, with a strong foundation in both front-end and back-end development.</p>
+                <p>Développeur web et mobile basé en Italie, spécialisé dans la création de sites vitrines professionnels de haute qualité. Je vous offre un service rapide et efficace avec une livraison garantie en 7 jours, sans compromis sur la qualité.</p>
 
-                <p>Committed to continuous learning and improvement, I thrive on solving complex problems and turning innovative ideas into reality. Experienced in collaborating with teams to deliver scalable, maintainable code and exceptional digital products that delight users.</p>
+                <p>Mon expertise couvre la conception de sites vitrines modernes, responsives et optimisés pour le référencement. Que vous soyez une petite entreprise, un artisan ou un professionnel indépendant, je crée votre présence en ligne avec un design élégant et une expérience utilisateur exceptionnelle.</p>
 
               </div>
 
 
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number">10+</div>
-                  <div class="stat-label">Projects Completed</div>
+                  <div class="stat-number">20+</div>
+                  <div class="stat-label">Sites Livrés</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">2+</div>
-                  <div class="stat-label">Years Experience</div>
+                  <div class="stat-number">7</div>
+                  <div class="stat-label">Jours de Livraison</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">98%</div>
-                  <div class="stat-label">Client Satisfaction</div>
+                  <div class="stat-number">100%</div>
+                  <div class="stat-label">Satisfaction Client</div>
                 </div>
               </div>
 
               <div class="details-grid">
                 <div class="detail-row">
                   <div class="detail-item">
-                    <span class="detail-label">Specialization</span>
-                    <span class="detail-value">Development</span>
+                    <span class="detail-label">Spécialisation</span>
+                    <span class="detail-value">Sites Vitrines Professionnels</span>
                   </div>
                   <div class="detail-item">
-                    <span class="detail-label">Experience Level</span>
-                    <span class="detail-value">Professional</span>
+                    <span class="detail-label">Expérience</span>
+                    <span class="detail-value">3+ Ans</span>
                   </div>
                 </div>
                 <div class="detail-row">
                   <div class="detail-item">
-                    <span class="detail-label">Education</span>
-                    <span class="detail-value">HND in Software Engineering</span>
+                    <span class="detail-label">Formation</span>
+                    <span class="detail-value">Ingénierie Logicielle</span>
                   </div>
                   <div class="detail-item">
-                    <span class="detail-label">Languages</span>
-                    <span class="detail-value">English,  French</span>
+                    <span class="detail-label">Langues</span>
+                    <span class="detail-value">Français, Italien, Anglais</span>
                   </div>
                 </div>
               </div>
@@ -154,11 +154,11 @@
               <div class="cta-section">
                 <a href="{{ asset('/resume/Fobs.pdf') }}" class="btn btn-primary" target="_blank" rel="noopener">
                   <i class="bi bi-download"></i>
-                  Download Resume
+                  Télécharger CV
                 </a>
-                <a href="https://wa.me/+237690383299" class="btn btn-outline">
+                <a href="https://wa.me/+393511262532" class="btn btn-outline">
                   <i class="bi bi-chat-dots"></i>
-                  Let's Talk
+                  Discutons
                 </a>
               </div>
             </div>
@@ -221,8 +221,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>My technical expertise spans both front-end and back-end development, enabling me to build seamless, high-performance web and mobile applications. I am passionate about mastering new technologies and delivering solutions that are both visually appealing and functionally robust. Below are some of the key skills and tools I work with:</p>
+        <h2>Compétences</h2>
+        <p>Mon expertise technique couvre le développement front-end et back-end, me permettant de créer des sites vitrines professionnels performants et élégants. Je maîtrise les technologies modernes pour vous offrir une présence en ligne de qualité supérieure, livrée rapidement et adaptée à vos besoins spécifiques.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -230,7 +230,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3>Front-end Development</h3>
+              <h3>Développement Front-end</h3>
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
@@ -240,7 +240,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
+                  <div class="skill-tooltip">Maîtrise expert de HTML5 sémantique et CSS3 moderne</div>
                 </div>
 
                 
@@ -252,17 +252,17 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                  <div class="skill-tooltip">Expérience avec React hooks, gestion d'état et architecture composants</div>
                 </div>
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>React Native</h4>
-                    <span class="skill-percentage">80%</span>
+                    <h4>Design Responsive</h4>
+                    <span class="skill-percentage">90%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">xperience with React hooks, state management, and component architecture</div>
+                  <div class="skill-tooltip">Sites optimisés pour tous les appareils (mobile, tablette, desktop)</div>
                 </div>
 
               </div>
@@ -271,7 +271,7 @@
 
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3>Back-end Development</h3>
+              <h3>Développement Back-end</h3>
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
@@ -282,7 +282,7 @@
                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 <div class="skill-tooltip">
-                    Backend development and API integration with PHP.
+                    Développement backend et intégration API avec PHP.
                 </div>
                 </div>
                 <div class="skill-item">
@@ -293,18 +293,18 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Server-side PHP development with Laravel and REST APIs</div>
+                  <div class="skill-tooltip">Développement PHP côté serveur avec Laravel et APIs REST</div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>SQL</h4>
-                    <span class="skill-percentage">80%</span>
+                    <h4>SEO & Performance</h4>
+                    <span class="skill-percentage">88%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
+                  <div class="skill-tooltip">Optimisation pour les moteurs de recherche et performances web</div>
                 </div>
               </div>
             </div><!-- End Backend Skills -->
@@ -482,7 +482,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Explore a curated selection of my web, mobile, and design projects. Each project demonstrates my commitment to quality, creativity, and delivering real value to clients. From innovative web applications to engaging mobile experiences and creative branding, my portfolio highlights the diverse skills and solutions I bring to every collaboration.</p>
+        <p>Découvrez une sélection de sites vitrines professionnels que j'ai créés pour mes clients en Europe. Chaque projet démontre mon engagement envers la qualité, la créativité et la livraison rapide. Des designs élégants aux expériences utilisateurs intuitives, mon portfolio illustre la diversité des solutions que j'apporte à chaque collaboration.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -493,7 +493,7 @@
             <div class="col-lg-3 filter-sidebar">
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
-                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter="*" class="filter-active">Tous les Projets</li>
                   {{-- <li data-filter=".filter-photography">Photography</li>
                   <li data-filter=".filter-design">Design</li>
                   <li data-filter=".filter-automotive">Automotive</li>
@@ -524,7 +524,7 @@
                   </div>
                 @empty
                   <div class="col-12">
-                    <p class="text-center">No portfolio items available at the moment.</p>
+                    <p class="text-center">Aucun projet disponible pour le moment.</p>
                   </div>
                 @endforelse
               </div><!-- End Portfolio Container -->
@@ -543,7 +543,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Discover a range of services designed to elevate your business, enhance your brand, and accelerate your digital transformation. From creative branding and design systems to robust digital platforms and growth strategies, I deliver solutions tailored to your unique goals.</p>
+        <p>Découvrez ma gamme de services conçus pour propulser votre entreprise et renforcer votre présence digitale. De la création de sites vitrines professionnels aux solutions web sur mesure, je livre des résultats de qualité en 7 jours, adaptés à vos objectifs uniques.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -553,18 +553,18 @@
             <div class="col-lg-8 col-md-12">
               <div class="service-intro">
                 <h2 class="service-heading">
-                  <div>Future Oriented</div>
-                  <div><span>Business Solutions</span></div>
+                  <div>Solutions Digitales</div>
+                  <div><span>Professionnelles</span></div>
                 </h2>
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
               <div class="service-summary">
                 <p>
-                  We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
+                  J'intègre des stratégies innovantes, des approches créatives et les dernières technologies pour créer des expériences digitales exceptionnelles qui engagent votre audience et font croître votre activité.
                 </p>
                 <a href="#services" class="service-btn">
-                  View All Services
+                  Voir Tous les Services
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -576,24 +576,6 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-phone"></i>
-              </div>
-              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="#">
-                  Mobile <span>Development</span>
-                </a>
-              </h3>
-              <p>
-                Building robust, user-friendly mobile applications for Android and iOS using modern frameworks like React Native. Focused on delivering seamless user experiences and high performance.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
                 <i class="bi bi-laptop"></i>
               </div>
               <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
@@ -601,51 +583,33 @@
               </a>
               <h3>
                 <a href="#">
-                  Web <span>Development</span>
+                  Sites Vitrines <span>Professionnels</span>
                 </a>
               </h3>
               <p>
-                Creating modern, responsive websites and web applications using technologies like Laravel, PHP, JavaScript, and React. Emphasis on clean code, scalability, and intuitive interfaces.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-mortarboard"></i>
-              </div>
-              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="#">
-                  Technical <span>Instruction</span>
-                </a>
-              </h3>
-              <p>
-                Delivering engaging and practical training sessions in web and mobile development. Helping students and teams master programming concepts, frameworks, and best practices.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="#">
-                  API <span>Integration</span>
-                </a>
-              </h3>
-              <p>
-                Integrating third-party APIs and building custom RESTful APIs to connect applications and enhance functionality across platforms.
+                Création de sites vitrines élégants et performants, livrés en 7 jours. Design moderne, responsive et optimisé SEO pour maximiser votre visibilité en ligne.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="#">
+                  Design <span>Sur Mesure</span>
+                </a>
+              </h3>
+              <p>
+                Conception d'interfaces uniques et attrayantes adaptées à votre identité de marque. Design personnalisé pour vous démarquer de la concurrence.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-graph-up"></i>
@@ -655,29 +619,65 @@
               </a>
               <h3>
                 <a href="#">
-                  Project <span>Consulting</span>
+                  Optimisation <span>SEO</span>
                 </a>
               </h3>
               <p>
-                Advising on digital strategy, technology stack selection, and best practices for web and mobile projects to ensure successful outcomes.
+                Référencement naturel optimisé pour améliorer votre positionnement sur Google. Votre site sera visible par vos clients potentiels.
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
-                <i class="bi bi-people"></i>
+                <i class="bi bi-phone"></i>
               </div>
               <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="#">
-                  Mentorship & <span>Support</span>
+                  Design <span>Responsive</span>
                 </a>
               </h3>
               <p>
-                Providing mentorship and ongoing support for junior developers and teams, fostering growth and continuous improvement in software development.
+                Sites parfaitement adaptés à tous les écrans (mobile, tablette, desktop). Garantie d'une expérience utilisateur optimale sur tous les appareils.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="#">
+                  Livraison <span>Rapide</span>
+                </a>
+              </h3>
+              <p>
+                Votre site professionnel livré en 7 jours. Service rapide et efficace sans compromis sur la qualité du résultat final.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-headset"></i>
+              </div>
+              <a href="#" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="#">
+                  Support & <span>Maintenance</span>
+                </a>
+              </h3>
+              <p>
+                Accompagnement continu et maintenance de votre site. Support technique disponible pour assurer le bon fonctionnement de votre présence en ligne.
               </p>
             </div>
           </div>
@@ -692,8 +692,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>See what clients and collaborators from Cameroon and across Africa say about working with me—real feedback on project results, professionalism, and impact.</p>
+        <h2>Témoignages</h2>
+        <p>Découvrez ce que mes clients d'Europe disent de leur expérience avec moi—des retours authentiques sur les résultats, le professionnalisme et l'impact de mes services de création de sites vitrines.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -705,14 +705,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Working with Boreil was a game-changer for our business. His web solutions helped us reach more customers in Yaoundé and improved our online presence.</p>
+              <p>Boreil a créé un site vitrine magnifique pour mon restaurant en seulement 7 jours. Le design est moderne et nos réservations en ligne ont augmenté de 40%. Service excellent!</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Atoh Francis</h3>
-                  <span class="position">Developer, Cameroon</span>
+                  <h3>Marco Rossi</h3>
+                  <span class="position">Propriétaire Restaurant, Rome</span>
                 </div>
               </div>
             </div>
@@ -759,14 +759,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Professional, creative, and always available for support. I highly recommend Boreil for any digital project in Africa.</p>
+              <p>Professionnel, créatif et toujours disponible. Mon site vitrine pour mon studio de photographie est exactement ce que je voulais. Je recommande vivement!</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Donguepe Steeve</h3>
-                  <span class="position">Startup Founder, Cameroon</span>
+                  <h3>Sophia Bianchi</h3>
+                  <span class="position">Photographe, Milan</span>
                 </div>
               </div>
             </div>
@@ -795,14 +795,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Boreil’s attention to detail and understanding of local needs made our project stand out. We’re grateful for his expertise.</p>
+              <p>Excellent travail! Le site pour mon cabinet d'avocats reflète parfaitement notre professionnalisme. Livraison rapide et communication impeccable.</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Yotta Jovence</h3>
-                  <span class="position">Devops, Cameroon</span>
+                  <h3>Alessandro Ferrari</h3>
+                  <span class="position">Avocat, Florence</span>
                 </div>
               </div>
             </div>
@@ -820,24 +820,24 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>If you’d like to discuss a project, collaborate, or just say hello, feel free to reach out using the form below or through my contact details. I look forward to connecting with you!</p></div><!-- End Section Title -->
+        <p>Si vous souhaitez discuter d'un projet, collaborer, ou simplement dire bonjour, n'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées. J'ai hâte d'échanger avec vous!</p></div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box">
-              <h3>Contact Info</h3>
-                <p>If you have a project in mind, want to collaborate, or just want to say hello, feel free to contact me using the details below.</p>
+              <h3>Informations de Contact</h3>
+                <p>Si vous avez un projet en tête, souhaitez collaborer, ou simplement dire bonjour, n'hésitez pas à me contacter via les coordonnées ci-dessous.</p>
 
               <div class="info-item">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="content">
-                  <h4>Our Location</h4>
-                  <p>Nkolmesseng</p>
-                  <p>Yaounde, Cameroon</p>
+                  <h4>Notre Localisation</h4>
+                  <p>Rome</p>
+                  <p>Italie</p>
                 </div>
               </div>
 
@@ -846,8 +846,8 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+237 690 383 299</p>
+                  <h4>Numéro de Téléphone</h4>
+                  <p>+39 351 126 2532</p>
                   {{-- <p>+1 6678 254445 41</p> --}}
                 </div>
               </div>
@@ -857,7 +857,7 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="content">
-                  <h4>Email Address</h4>
+                  <h4>Adresse Email</h4>
                   <p>fobsboreil@gmail.com</p>
                   {{-- <p>contact@example.com</p> --}}
                 </div>
@@ -867,22 +867,22 @@
 
           <div class="col-lg-7">
             <div class="contact-form">
-              <h3>Get In Touch</h3>
-                <p>If you have any questions, project ideas, or just want to connect, please fill out the form below. I look forward to hearing from you!</p>
+              <h3>Entrer en Contact</h3>
+                <p>Si vous avez des questions, des idées de projets, ou souhaitez simplement échanger, veuillez remplir le formulaire ci-dessous. J'ai hâte de vous lire!</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Votre Nom" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="email" class="form-control" name="email" placeholder="Votre Email" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
                   </div>
 
                   <div class="col-12">
@@ -890,11 +890,11 @@
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
+                    <div class="loading">Chargement</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">Votre message a été envoyé. Merci!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Envoyer le Message</button>
                   </div>
 
                 </div>

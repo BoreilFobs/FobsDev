@@ -15,134 +15,134 @@ class PortfolioItemSeeder extends Seeder
     {
         $portfolioItems = [
             [
-                'title' => 'FobsSMS',
-                'slug' => 'fobssms',
-                'category' => 'Web and Mobile Development',
-                'client' => 'Personal',
-                'project_date' => '01 june, 2025',
-                'project_url_external' => 'https://sms.fobs.dev',
-                'project_url_external_text' => 'Visit FobsSMS Platform',
-                'description' => 'A comprehensive school management system designed to streamline administrative tasks, student management, and academic operations.',
-                'overview' => 'FobsSMS is a comprehensive School Management System designed making use of both web and mobile platforms. It streamlines administrative, academic, and communication processes for schools, providing tailored experiences based on user roles such as administrators, teachers, students, and parents.',
-                'overview_additional' => 'The system enables efficient management of student records, attendance, grading, scheduling, and communication, ensuring all stakeholders have secure and easy access to relevant information anytime, anywhere.',
+                'title' => 'Ristorante La Dolce Vita',
+                'slug' => 'ristorante-la-dolce-vita',
+                'category' => 'Site Vitrine Restaurant',
+                'client' => 'Marco Rossi',
+                'project_date' => '15 Novembre, 2024',
+                'project_url_external' => 'https://ladolcevita-example.it',
+                'project_url_external_text' => 'Visiter le Site',
+                'description' => 'Site vitrine élégant pour un restaurant italien de Rome, avec menu interactif, réservations en ligne et galerie photos. Livré en 7 jours.',
+                'overview' => 'La Dolce Vita est un restaurant italien traditionnel situé au cœur de Rome. Le site vitrine créé met en valeur l\'authenticité et l\'élégance de l\'établissement avec un design moderne et responsive.',
+                'overview_additional' => 'Le site inclut un système de réservation en ligne intégré, un menu interactif avec photos des plats, une galerie photo professionnelle et une section pour les avis clients. Optimisé pour le référencement local et les appareils mobiles.',
                 'main_image' => 'assets/img/portfolio/FobsSMS/1.png',
                 'gallery_images' => [
                     'assets/img/portfolio/FobsSMS/1.png',
                     'assets/img/portfolio/FobsSMS/2.png',
                     'assets/img/portfolio/FobsSMS/3.png'
                 ],
-                'url' => '/FobsSMS',
+                'url' => '/ristorante-la-dolce-vita',
                 'features' => [
                     [
                         'icon' => 'bi-check-circle-fill',
-                        'title' => 'Role-Based Access',
-                        'description' => 'Custom dashboards and permissions for administrators, teachers, students, and parents, ensuring each user sees only the information relevant to their role.'
-                    ],
-                    [
-                        'icon' => 'bi-shield-check',
-                        'title' => 'Secure Data Management',
-                        'description' => 'Advanced security protocols protect sensitive student and school data, with regular backups and encrypted communications across all platforms.'
-                    ],
-                    [
-                        'icon' => 'bi-graph-up',
-                        'title' => 'Academic & Administrative Tools',
-                        'description' => 'Automated attendance, grading, timetable management, and reporting tools help staff save time and reduce errors.'
+                        'title' => 'Réservation en Ligne',
+                        'description' => 'Système de réservation intégré permettant aux clients de réserver une table directement depuis le site web.'
                     ],
                     [
                         'icon' => 'bi-phone',
-                        'title' => 'Multi-Platform Accessibility',
-                        'description' => 'Seamless access via web and mobile apps, allowing users to stay connected and informed whether at school, home, or on the go.'
+                        'title' => 'Design Responsive',
+                        'description' => 'Site parfaitement adapté à tous les appareils (smartphone, tablette, ordinateur) pour une expérience optimale.'
+                    ],
+                    [
+                        'icon' => 'bi-camera',
+                        'title' => 'Galerie Photos',
+                        'description' => 'Galerie professionnelle mettant en valeur l\'ambiance du restaurant et les plats signature.'
+                    ],
+                    [
+                        'icon' => 'bi-search',
+                        'title' => 'Optimisation SEO',
+                        'description' => 'Référencement optimisé pour apparaître en première page de Google pour les recherches locales.'
                     ]
                 ],
-                'technologies' => ['Laravel', 'Flutter', 'MySQL', 'RESTful API', 'Firebase'],
+                'technologies' => ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Bootstrap'],
                 'is_active' => true,
                 'order' => 1
             ],
             [
-                'title' => 'EDUCAM',
-                'slug' => 'educam',
-                'category' => 'Web and Mobile Development',
-                'client' => 'Atoh Francis',
-                'project_date' => '24 Mai, 2025',
-                'project_url_external' => 'https://educam.helonyxe.com',
-                'project_url_external_text' => 'Launch EDUCAM Platform',
-                'description' => 'A GCE revision platform with web and Android applications designed to enhance student learning experiences with responsive design and smooth navigation.',
-                'overview' => 'Educam is a comprehensive web and mobile application designed specifically for Cameroon GCE students. The platform provides a wide range of revision materials, past questions, interactive quizzes, and study resources to help students prepare effectively for their exams.',
-                'overview_additional' => 'The application aims to simplify the revision process by offering organized content, instant feedback, and progress tracking. With both web and mobile versions, students can access their study materials anytime, anywhere, ensuring flexibility and convenience.',
+                'title' => 'Studio Foto Bianchi',
+                'slug' => 'studio-foto-bianchi',
+                'category' => 'Site Vitrine Photographe',
+                'client' => 'Sophia Bianchi',
+                'project_date' => '22 Octobre, 2024',
+                'project_url_external' => 'https://studiobianchi-example.it',
+                'project_url_external_text' => 'Découvrir le Portfolio',
+                'description' => 'Portfolio en ligne pour photographe professionnel à Milan. Design minimaliste mettant en valeur les œuvres photographiques. Livraison express en 7 jours.',
+                'overview' => 'Studio Foto Bianchi est un studio de photographie professionnelle spécialisé dans les mariages, portraits et événements. Le site vitrine créé reflète l\'élégance et le professionnalisme du photographe.',
+                'overview_additional' => 'Le design minimaliste et épuré met l\'accent sur les photographies. Le site inclut un portfolio organisé par catégories, un formulaire de contact personnalisé, et une section témoignages clients. Temps de chargement ultra-rapide pour une expérience utilisateur optimale.',
                 'main_image' => 'assets/img/portfolio/Educam/1.png',
                 'gallery_images' => [
                     'assets/img/portfolio/Educam/1.png',
                     'assets/img/portfolio/Educam/2.png',
                     'assets/img/portfolio/Educam/3.png'
                 ],
-                'url' => '/Educam',
+                'url' => '/studio-foto-bianchi',
                 'features' => [
                     [
-                        'icon' => 'bi-check-circle-fill',
-                        'title' => 'Responsive Design',
-                        'description' => 'The platform is optimized for both web and mobile devices, providing a seamless experience for students on any device.'
+                        'icon' => 'bi-images',
+                        'title' => 'Portfolio Dynamique',
+                        'description' => 'Galerie photos organisée par catégories avec effets visuels élégants et navigation intuitive.'
                     ],
                     [
-                        'icon' => 'bi-book',
-                        'title' => 'Extensive Revision Materials',
-                        'description' => 'Access to a large database of GCE past questions, answers, and detailed explanations for comprehensive revision.'
+                        'icon' => 'bi-speedometer2',
+                        'title' => 'Performance Optimale',
+                        'description' => 'Images optimisées et chargement ultra-rapide pour une navigation fluide sur tous les appareils.'
                     ],
                     [
-                        'icon' => 'bi-bar-chart',
-                        'title' => 'Progress Tracking',
-                        'description' => 'Students can monitor their revision progress, identify strengths and weaknesses, and focus on areas that need improvement.'
+                        'icon' => 'bi-envelope',
+                        'title' => 'Formulaire Contact',
+                        'description' => 'Formulaire de demande de devis personnalisé avec champs adaptés aux besoins des photographes.'
                     ],
                     [
-                        'icon' => 'bi-people',
-                        'title' => 'Interactive Quizzes',
-                        'description' => 'Engage with interactive quizzes and instant feedback to reinforce learning and boost exam confidence.'
+                        'icon' => 'bi-star',
+                        'title' => 'Témoignages Clients',
+                        'description' => 'Section dédiée aux avis et témoignages des clients satisfaits pour renforcer la crédibilité.'
                     ]
                 ],
-                'technologies' => ['Laravel', 'Flutter', 'MySQL', 'Bootstrap', 'Android SDK'],
+                'technologies' => ['HTML5', 'CSS3', 'JavaScript', 'Lazy Loading', 'Responsive Design'],
                 'is_active' => true,
                 'order' => 2
             ],
             [
-                'title' => 'Glow & Chic',
-                'slug' => 'glowandchic',
-                'category' => 'Web and Mobile Development',
-                'client' => 'Mme Susie',
-                'project_date' => '25 june, 2025',
-                'project_url_external' => 'https://glowandchicgarden.fobs.dev',
-                'project_url_external_text' => 'Visit Glow & Chic Garden',
-                'description' => 'A modern e-commerce platform for beauty and fashion products with an intuitive interface and seamless shopping experience.',
-                'overview' => 'The Glow & Chic Garden App is a comprehensive solution designed to revolutionize beauty salon operations. It seamlessly integrates online booking for clients with robust internal management tools for the salon, streamlining appointments, staff schedules, and critical stock management.',
-                'overview_additional' => 'This intuitive platform provides a tailored experience for salon owners, staff, and clients. It ensures efficient service delivery, optimizes resource allocation, and enhances customer satisfaction by providing easy access to services, appointment history, and personalized offers.',
-                'main_image' => 'assets/img/portfolio/glowandchic/1.png',
+                'title' => 'Avvocato Ferrari & Associati',
+                'slug' => 'avvocato-ferrari-associati',
+                'category' => 'Site Vitrine Cabinet d\'Avocats',
+                'client' => 'Alessandro Ferrari',
+                'project_date' => '08 Septembre, 2024',
+                'project_url_external' => 'https://ferrarilaw-example.it',
+                'project_url_external_text' => 'Consulter le Site',
+                'description' => 'Site web professionnel pour cabinet d\'avocats à Florence. Design sobre et élégant reflétant le sérieux et l\'expertise juridique. Réalisé en 7 jours.',
+                'overview' => 'Ferrari & Associati est un cabinet d\'avocats renommé spécialisé en droit des affaires et droit civil. Le site vitrine créé transmet professionnalisme et confiance aux clients potentiels.',
+                'overview_additional' => 'Le site présente les domaines d\'expertise, les profils des avocats, des articles juridiques et un formulaire de consultation confidentiel. Design professionnel avec codes couleurs sobres. Conformité RGPD et sécurité renforcée pour la protection des données clients.',
+                'main_image' => 'assets/img/portfolio/Glow/1.png',
                 'gallery_images' => [
-                    'assets/img/portfolio/glowandchic/1.png',
-                    'assets/img/portfolio/glowandchic/2.png',
-                    'assets/img/portfolio/glowandchic/3.png'
+                    'assets/img/portfolio/Glow/1.png',
+                    'assets/img/portfolio/Glow/2.png',
+                    'assets/img/portfolio/Glow/3.png'
                 ],
-                'url' => '/glowandchic',
+                'url' => '/avvocato-ferrari-associati',
                 'features' => [
                     [
-                        'icon' => 'bi-calendar-check',
-                        'title' => 'Effortless Online Booking',
-                        'description' => 'Clients can easily browse services, view staff availability, and book appointments 24/7 through a user-friendly interface, reducing no-shows and administrative calls.'
+                        'icon' => 'bi-briefcase',
+                        'title' => 'Domaines d\'Expertise',
+                        'description' => 'Présentation claire et détaillée des différents domaines de compétence juridique du cabinet.'
                     ],
                     [
-                        'icon' => 'bi-box-seam',
-                        'title' => 'Intelligent Stock Management',
-                        'description' => 'Track product inventory in real-time, receive low-stock alerts, manage supplier orders, and analyze product consumption to optimize stock levels and minimize waste.'
+                        'icon' => 'bi-shield-lock',
+                        'title' => 'Sécurité & RGPD',
+                        'description' => 'Conformité totale au RGPD avec formulaires sécurisés et protection des données clients.'
+                    ],
+                    [
+                        'icon' => 'bi-journal-text',
+                        'title' => 'Blog Juridique',
+                        'description' => 'Section articles et actualités juridiques pour démontrer l\'expertise et améliorer le SEO.'
                     ],
                     [
                         'icon' => 'bi-people',
-                        'title' => 'Client & Staff Management',
-                        'description' => 'Maintain detailed client profiles, service history, and preferences. Efficiently manage staff schedules, commissions, and performance, ensuring smooth salon operations.'
-                    ],
-                    [
-                        'icon' => 'bi-bar-chart',
-                        'title' => 'Performance Analytics & Reporting',
-                        'description' => 'Gain insights into popular services, peak booking times, staff performance, and stock turnover with comprehensive reports and dashboards to drive business growth.'
+                        'title' => 'Profils Avocats',
+                        'description' => 'Présentation détaillée de chaque avocat avec parcours, spécialisations et coordonnées.'
                     ]
                 ],
-                'technologies' => ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap', 'RESTful API', 'Stripe'],
+                'technologies' => ['HTML5', 'CSS3', 'PHP', 'SSL', 'RGPD Compliant'],
                 'is_active' => true,
                 'order' => 3
             ]
