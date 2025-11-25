@@ -15,134 +15,134 @@ class PortfolioItemSeeder extends Seeder
     {
         $portfolioItems = [
             [
-                'title' => 'Ristorante La Dolce Vita',
-                'slug' => 'ristorante-la-dolce-vita',
-                'category' => 'Site Vitrine Restaurant',
-                'client' => 'Marco Rossi',
-                'project_date' => '15 Novembre, 2024',
-                'project_url_external' => 'https://ladolcevita-example.it',
-                'project_url_external_text' => 'Visiter le Site',
-                'description' => 'Site vitrine élégant pour un restaurant italien de Rome, avec menu interactif, réservations en ligne et galerie photos. Livré en 7 jours.',
-                'overview' => 'La Dolce Vita est un restaurant italien traditionnel situé au cœur de Rome. Le site vitrine créé met en valeur l\'authenticité et l\'élégance de l\'établissement avec un design moderne et responsive.',
-                'overview_additional' => 'Le site inclut un système de réservation en ligne intégré, un menu interactif avec photos des plats, une galerie photo professionnelle et une section pour les avis clients. Optimisé pour le référencement local et les appareils mobiles.',
+                'title' => 'FobsSMS',
+                'slug' => 'fobssms',
+                'category' => 'Développement Web et Mobile',
+                'client' => 'Personnel',
+                'project_date' => '01 juin, 2025',
+                'project_url_external' => 'https://sms.fobs.dev',
+                'project_url_external_text' => 'Visiter la Plateforme FobsSMS',
+                'description' => 'Un système complet de gestion scolaire conçu pour rationaliser les tâches administratives, la gestion des élèves et les opérations académiques.',
+                'overview' => 'FobsSMS est un système complet de gestion scolaire conçu pour les plateformes web et mobile. Il rationalise les processus administratifs, académiques et de communication pour les écoles, offrant des expériences adaptées en fonction des rôles d\'utilisateur tels que les administrateurs, les enseignants, les élèves et les parents.',
+                'overview_additional' => 'Le système permet une gestion efficace des dossiers des élèves, de la présence, des notes, de la planification et de la communication, garantissant que toutes les parties prenantes ont un accès sécurisé et facile aux informations pertinentes à tout moment, n\'importe où.',
                 'main_image' => 'assets/img/portfolio/FobsSMS/1.png',
                 'gallery_images' => [
                     'assets/img/portfolio/FobsSMS/1.png',
                     'assets/img/portfolio/FobsSMS/2.png',
                     'assets/img/portfolio/FobsSMS/3.png'
                 ],
-                'url' => '/ristorante-la-dolce-vita',
+                'url' => '/FobsSMS',
                 'features' => [
                     [
                         'icon' => 'bi-check-circle-fill',
-                        'title' => 'Réservation en Ligne',
-                        'description' => 'Système de réservation intégré permettant aux clients de réserver une table directement depuis le site web.'
+                        'title' => 'Accès Basé sur les Rôles',
+                        'description' => 'Tableaux de bord personnalisés et permissions pour les administrateurs, les enseignants, les élèves et les parents, garantissant que chaque utilisateur ne voit que les informations pertinentes à son rôle.'
+                    ],
+                    [
+                        'icon' => 'bi-shield-check',
+                        'title' => 'Gestion Sécurisée des Données',
+                        'description' => 'Des protocoles de sécurité avancés protègent les données sensibles des élèves et de l\'école, avec des sauvegardes régulières et des communications cryptées sur toutes les plateformes.'
+                    ],
+                    [
+                        'icon' => 'bi-graph-up',
+                        'title' => 'Outils Académiques et Administratifs',
+                        'description' => 'Des outils automatisés de présence, de notation, de gestion des emplois du temps et de reporting aident le personnel à gagner du temps et à réduire les erreurs.'
                     ],
                     [
                         'icon' => 'bi-phone',
-                        'title' => 'Design Responsive',
-                        'description' => 'Site parfaitement adapté à tous les appareils (smartphone, tablette, ordinateur) pour une expérience optimale.'
-                    ],
-                    [
-                        'icon' => 'bi-camera',
-                        'title' => 'Galerie Photos',
-                        'description' => 'Galerie professionnelle mettant en valeur l\'ambiance du restaurant et les plats signature.'
-                    ],
-                    [
-                        'icon' => 'bi-search',
-                        'title' => 'Optimisation SEO',
-                        'description' => 'Référencement optimisé pour apparaître en première page de Google pour les recherches locales.'
+                        'title' => 'Accessibilité Multi-Plateformes',
+                        'description' => 'Accès transparent via des applications web et mobiles, permettant aux utilisateurs de rester connectés et informés que ce soit à l\'école, à la maison ou en déplacement.'
                     ]
                 ],
-                'technologies' => ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Bootstrap'],
+                'technologies' => ['Laravel', 'Flutter', 'MySQL', 'RESTful API', 'Firebase'],
                 'is_active' => true,
                 'order' => 1
             ],
             [
-                'title' => 'Studio Foto Bianchi',
-                'slug' => 'studio-foto-bianchi',
-                'category' => 'Site Vitrine Photographe',
-                'client' => 'Sophia Bianchi',
-                'project_date' => '22 Octobre, 2024',
-                'project_url_external' => 'https://studiobianchi-example.it',
-                'project_url_external_text' => 'Découvrir le Portfolio',
-                'description' => 'Portfolio en ligne pour photographe professionnel à Milan. Design minimaliste mettant en valeur les œuvres photographiques. Livraison express en 7 jours.',
-                'overview' => 'Studio Foto Bianchi est un studio de photographie professionnelle spécialisé dans les mariages, portraits et événements. Le site vitrine créé reflète l\'élégance et le professionnalisme du photographe.',
-                'overview_additional' => 'Le design minimaliste et épuré met l\'accent sur les photographies. Le site inclut un portfolio organisé par catégories, un formulaire de contact personnalisé, et une section témoignages clients. Temps de chargement ultra-rapide pour une expérience utilisateur optimale.',
+                'title' => 'EDUCAM',
+                'slug' => 'educam',
+                'category' => 'Développement Web et Mobile',
+                'client' => 'Atoh Francis',
+                'project_date' => '24 Mai, 2025',
+                'project_url_external' => 'https://educam.helonyxe.com',
+                'project_url_external_text' => 'Lancer la Plateforme EDUCAM',
+                'description' => 'Une plateforme de révision GCE avec des applications web et Android conçues pour améliorer les expériences d\'apprentissage des élèves avec un design réactif et une navigation fluide.',
+                'overview' => 'Educam est une application web et mobile complète conçue spécifiquement pour les élèves du GCE camerounais. La plateforme fournit un large éventail de matériels de révision, de questions passées, de quiz interactifs et de ressources d\'étude pour aider les élèves à se préparer efficacement à leurs examens.',
+                'overview_additional' => 'L\'application vise à simplifier le processus de révision en offrant un contenu organisé, des retours instantanés et un suivi des progrès. Avec des versions web et mobile, les élèves peuvent accéder à leurs matériels d\'étude à tout moment, n\'importe où, garantissant flexibilité et commodité.',
                 'main_image' => 'assets/img/portfolio/Educam/1.png',
                 'gallery_images' => [
                     'assets/img/portfolio/Educam/1.png',
                     'assets/img/portfolio/Educam/2.png',
                     'assets/img/portfolio/Educam/3.png'
                 ],
-                'url' => '/studio-foto-bianchi',
+                'url' => '/Educam',
                 'features' => [
                     [
-                        'icon' => 'bi-images',
-                        'title' => 'Portfolio Dynamique',
-                        'description' => 'Galerie photos organisée par catégories avec effets visuels élégants et navigation intuitive.'
+                        'icon' => 'bi-check-circle-fill',
+                        'title' => 'Design Réactif',
+                        'description' => 'La plateforme est optimisée pour les appareils web et mobiles, offrant une expérience transparente aux élèves sur n\'importe quel appareil.'
                     ],
                     [
-                        'icon' => 'bi-speedometer2',
-                        'title' => 'Performance Optimale',
-                        'description' => 'Images optimisées et chargement ultra-rapide pour une navigation fluide sur tous les appareils.'
+                        'icon' => 'bi-book',
+                        'title' => 'Matériels de Révision Étendus',
+                        'description' => 'Accès à une vaste base de données de questions passées du GCE, de réponses et d\'explications détaillées pour une révision complète.'
                     ],
                     [
-                        'icon' => 'bi-envelope',
-                        'title' => 'Formulaire Contact',
-                        'description' => 'Formulaire de demande de devis personnalisé avec champs adaptés aux besoins des photographes.'
+                        'icon' => 'bi-bar-chart',
+                        'title' => 'Suivi des Progrès',
+                        'description' => 'Les élèves peuvent suivre leurs progrès de révision, identifier leurs forces et faiblesses, et se concentrer sur les domaines nécessitant une amélioration.'
                     ],
                     [
-                        'icon' => 'bi-star',
-                        'title' => 'Témoignages Clients',
-                        'description' => 'Section dédiée aux avis et témoignages des clients satisfaits pour renforcer la crédibilité.'
+                        'icon' => 'bi-people',
+                        'title' => 'Quiz Interactifs',
+                        'description' => 'Participez à des quiz interactifs et des retours instantanés pour renforcer l\'apprentissage et booster la confiance aux examens.'
                     ]
                 ],
-                'technologies' => ['HTML5', 'CSS3', 'JavaScript', 'Lazy Loading', 'Responsive Design'],
+                'technologies' => ['Laravel', 'Flutter', 'MySQL', 'Bootstrap', 'Android SDK'],
                 'is_active' => true,
                 'order' => 2
             ],
             [
-                'title' => 'Avvocato Ferrari & Associati',
-                'slug' => 'avvocato-ferrari-associati',
-                'category' => 'Site Vitrine Cabinet d\'Avocats',
-                'client' => 'Alessandro Ferrari',
-                'project_date' => '08 Septembre, 2024',
-                'project_url_external' => 'https://ferrarilaw-example.it',
-                'project_url_external_text' => 'Consulter le Site',
-                'description' => 'Site web professionnel pour cabinet d\'avocats à Florence. Design sobre et élégant reflétant le sérieux et l\'expertise juridique. Réalisé en 7 jours.',
-                'overview' => 'Ferrari & Associati est un cabinet d\'avocats renommé spécialisé en droit des affaires et droit civil. Le site vitrine créé transmet professionnalisme et confiance aux clients potentiels.',
-                'overview_additional' => 'Le site présente les domaines d\'expertise, les profils des avocats, des articles juridiques et un formulaire de consultation confidentiel. Design professionnel avec codes couleurs sobres. Conformité RGPD et sécurité renforcée pour la protection des données clients.',
-                'main_image' => 'assets/img/portfolio/Glow/1.png',
+                'title' => 'Glow & Chic',
+                'slug' => 'glowandchic',
+                'category' => 'Développement Web et Mobile',
+                'client' => 'Mme Susie',
+                'project_date' => '25 juin, 2025',
+                'project_url_external' => 'https://glowandchicgarden.fobs.dev',
+                'project_url_external_text' => 'Visiter Glow & Chic Garden',
+                'description' => 'Une plateforme e-commerce moderne pour les produits de beauté et de mode avec une interface intuitive et une expérience d\'achat fluide.',
+                'overview' => 'L\'application Glow & Chic Garden est une solution complète conçue pour révolutionner les opérations des salons de beauté. Elle intègre de manière transparente la réservation en ligne pour les clients avec des outils de gestion interne robustes pour le salon, rationalisant les rendez-vous, les horaires du personnel et la gestion critique des stocks.',
+                'overview_additional' => 'Cette plateforme intuitive offre une expérience sur mesure pour les propriétaires de salon, le personnel et les clients. Elle garantit une prestation de services efficace, optimise l\'allocation des ressources et améliore la satisfaction client en offrant un accès facile aux services, à l\'historique des rendez-vous et aux offres personnalisées.',
+                'main_image' => 'assets/img/portfolio/glowandchic/1.png',
                 'gallery_images' => [
-                    'assets/img/portfolio/Glow/1.png',
-                    'assets/img/portfolio/Glow/2.png',
-                    'assets/img/portfolio/Glow/3.png'
+                    'assets/img/portfolio/glowandchic/1.png',
+                    'assets/img/portfolio/glowandchic/2.png',
+                    'assets/img/portfolio/glowandchic/3.png'
                 ],
-                'url' => '/avvocato-ferrari-associati',
+                'url' => '/glowandchic',
                 'features' => [
                     [
-                        'icon' => 'bi-briefcase',
-                        'title' => 'Domaines d\'Expertise',
-                        'description' => 'Présentation claire et détaillée des différents domaines de compétence juridique du cabinet.'
+                        'icon' => 'bi-calendar-check',
+                        'title' => 'Réservation en Ligne Sans Effort',
+                        'description' => 'Les clients peuvent facilement parcourir les services, consulter la disponibilité du personnel et réserver des rendez-vous 24h/24 et 7j/7 via une interface conviviale, réduisant les absences et les appels administratifs.'
                     ],
                     [
-                        'icon' => 'bi-shield-lock',
-                        'title' => 'Sécurité & RGPD',
-                        'description' => 'Conformité totale au RGPD avec formulaires sécurisés et protection des données clients.'
-                    ],
-                    [
-                        'icon' => 'bi-journal-text',
-                        'title' => 'Blog Juridique',
-                        'description' => 'Section articles et actualités juridiques pour démontrer l\'expertise et améliorer le SEO.'
+                        'icon' => 'bi-box-seam',
+                        'title' => 'Gestion Intelligente des Stocks',
+                        'description' => 'Suivez l\'inventaire des produits en temps réel, recevez des alertes de stock faible, gérez les commandes fournisseurs et analysez la consommation des produits pour optimiser les niveaux de stock et minimiser le gaspillage.'
                     ],
                     [
                         'icon' => 'bi-people',
-                        'title' => 'Profils Avocats',
-                        'description' => 'Présentation détaillée de chaque avocat avec parcours, spécialisations et coordonnées.'
+                        'title' => 'Gestion des Clients et du Personnel',
+                        'description' => 'Maintenez des profils clients détaillés, l\'historique des services et les préférences. Gérez efficacement les horaires du personnel, les commissions et les performances, garantissant des opérations fluides du salon.'
+                    ],
+                    [
+                        'icon' => 'bi-bar-chart',
+                        'title' => 'Analyses de Performance et Rapports',
+                        'description' => 'Obtenez des informations sur les services populaires, les heures de pointe de réservation, les performances du personnel et le chiffre d\'affaires des stocks avec des rapports et tableaux de bord complets pour stimuler la croissance de l\'entreprise.'
                     ]
                 ],
-                'technologies' => ['HTML5', 'CSS3', 'PHP', 'SSL', 'RGPD Compliant'],
+                'technologies' => ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap', 'RESTful API', 'Stripe'],
                 'is_active' => true,
                 'order' => 3
             ]
