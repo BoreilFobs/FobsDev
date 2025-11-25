@@ -41,7 +41,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/Proile-main.png" alt="Alexander Chen" class="profile-image">
+                  <img src="assets/img/profile/Proile-main.png" alt="Boreil Fobasso" class="profile-image">
                   <div class="floating-elements">
                     <div class="floating-icon icon-1"><i class="bi bi-palette"></i></div>
                     <div class="floating-icon icon-2"><i class="bi bi-code-slash"></i></div>
@@ -68,7 +68,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-image">
-                  <img src="assets/img/profile/profile2.png" alt="Profile Image" class="img-fluid">
+                  <img src="assets/img/profile/profile2.png" alt="Photo de Profil" class="img-fluid">
                 </div>
                 <div class="profile-badge">
                   <i class="bi bi-check-circle-fill"></i>
@@ -320,8 +320,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>If you want results, you have to put in the work. No shortcuts, no excuses—just skill, dedication, and a relentless drive to deliver. Mediocrity isn’t welcome here.</p>
+        <h2>Parcours</h2>
+        <p>Si vous voulez des résultats, il faut s'investir. Pas de raccourcis, pas d'excuses—juste des compétences, du dévouement et une volonté inébranlable de livrer. La médiocrité n'a pas sa place ici.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -331,26 +331,26 @@
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div class="profile-img mb-4">
-                <img src="assets/img/profile/profile1.jpg" alt="Profile" class="img-fluid rounded">
+                <img src="assets/img/profile/profile1.jpg" alt="Profil" class="img-fluid rounded">
               </div>
 
-              <h3>Professional Summary</h3>
+              <h3>Résumé Professionnel</h3>
               <p>
-                Creative and detail-oriented Web and Mobile Developer skilled in Laravel, React.js, JavaScript, and React Native. Experienced in building responsive, user-focused applications with clean code and intuitive UX/UI. Passionate about solving real-world problems and eager to collaborate on impactful projects.
+                Développeur Web et Mobile créatif et minutieux, spécialisé en Laravel, React.js, JavaScript et React Native. Expérimenté dans la création d'applications responsives centrées sur l'utilisateur avec un code propre et une UX/UI intuitive. Passionné par la résolution de problèmes réels et désireux de collaborer sur des projets à fort impact.
             </p>
-              <h3 class="mt-4">Contact Information</h3>
+              <h3 class="mt-4">Informations de Contact</h3>
               <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> Nkolmesseng, Yaounde, Cameroon</li>
+                <li><i class="bi bi-geo-alt"></i> Rome, Italie</li>
                 <li><i class="bi bi-envelope"></i> fobsboreil@gmail.com</li>
-                <li><i class="bi bi-phone"></i> +237 690 383 299</li>
+                <li><i class="bi bi-phone"></i> +39 351 126 2532</li>
                 <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
 
               <div class="skills-animation mt-4">
-                <h3>Technical Skills</h3>
+                <h3>Compétences Techniques</h3>
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Web Development</span>
+                    <span>Développement Web</span>
                     <span>95%</span>
                   </div>
                   <div class="progress">
@@ -360,7 +360,7 @@
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Mobile develoment</span>
+                    <span>Développement Mobile</span>
                     <span>75%</span>
                   </div>
                   <div class="progress">
@@ -370,7 +370,7 @@
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Teaching</span>
+                    <span>Enseignement</span>
                     <span>80%</span>
                   </div>
                   <div class="progress">
@@ -380,7 +380,7 @@
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Project Management</span>
+                    <span>Gestion de Projet</span>
                     <span>80%</span>
                   </div>
                   <div class="progress">
@@ -395,40 +395,40 @@
           <div class="col-lg-8 ps-4 ps-lg-5">
             <!-- Experience Section -->
             <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+              <h3><i class="bi bi-briefcase me-2"></i>Expérience Professionnelle</h3>
 
               <div class="resume-item">
-                <h4>FREELANCE WEB DEVELOPER</h4> 
+                <h4>DÉVELOPPEUR WEB FREELANCE</h4> 
                 {{-- <h5>2022 - Present</h5> --}}
                 {{-- <p class="company"><i class="bi bi-building"></i> Tech Innovations Inc.</p> --}}
                 <ul>
-                  <li>Freelance Web Developer with hands-on experience building custom websites and applications for individuals and businesses.</li>
-                  <li>Skilled at delivering tailored solutions and managing full project lifecycles.</li>
-                  <li>Committed to client satisfaction through responsive design and clean, efficient code.</li>
+                  <li>Développeur Web Freelance avec une expérience pratique dans la création de sites web et d'applications personnalisés pour les particuliers et les entreprises.</li>
+                  <li>Compétent dans la livraison de solutions sur mesure et la gestion complète du cycle de vie des projets.</li>
+                  <li>Engagement envers la satisfaction client grâce à un design responsive et un code propre et efficace.</li>
 
                 </ul>
               </div>
 
               <div class="resume-item">
-                <h4>Assistant Developer</h4>
+                <h4>Développeur Assistant</h4>
                 {{-- <h5>2019 - 2022</h5> --}}
                 {{-- <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p> --}}
                 <ul>
-                  <li>Served as Assistant Web and Mobile Developer on EDUCAM, a GCE revision platform.</li>
-                  <li>Contributed to the design and development of both web and Android applications.</li>
-                  <li>Collaborated with a team to implement features enhancing student learning experiences.</li>
-                  <li>Ensured responsive design, smooth navigation, and content accessibility across devices.</li>
+                  <li>Développeur Web et Mobile Assistant sur EDUCAM, une plateforme de révision GCE.</li>
+                  <li>Contribution à la conception et au développement d'applications web et Android.</li>
+                  <li>Collaboration avec une équipe pour implémenter des fonctionnalités améliorant l'expérience d'apprentissage des étudiants.</li>
+                  <li>Assurance d'un design responsive, d'une navigation fluide et d'une accessibilité du contenu sur tous les appareils.</li>
 
                 </ul>
               </div>
               <div class="resume-item">
-                  <h4>Independent Software Developer</h4>
+                  <h4>Développeur Logiciel Indépendant</h4>
                   {{-- <h5>2019 - 2022</h5> --}}
                   {{-- <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p> --}}
                   <ul>
-                    <li>Independent Web Developer focused on solving real-world problems through code.</li>
-                    <li>Developed personal projects including a comprehensive school management system and a community saving pools (tontines) software solution.</li>
-                    <li>Experienced in building full-stack applications from the ground up with an emphasis on usability, efficiency, and real-life impact.</li>
+                    <li>Développeur Web indépendant axé sur la résolution de problèmes réels à travers le code.</li>
+                    <li>Développement de projets personnels incluant un système de gestion scolaire complet et une solution logicielle de tontines communautaires.</li>
+                    <li>Expérience dans la création d'applications full-stack de zéro avec un accent sur l'utilisabilité, l'efficacité et l'impact réel.</li>
       
                   </ul>
                 </div>
@@ -436,20 +436,20 @@
 
             <!-- Education Section -->
             <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+              <h3><i class="bi bi-mortarboard me-2"></i>Formation</h3>
 
               <div class="resume-item">
-                <h4>HND in Software Engineering</h4>
+                <h4>HND en Génie Logiciel</h4>
                 <h5>2024 - 2025</h5>
-                <p class="company"><i class="bi bi-building"></i> Azimut higher institute</p>
-                <p>Currently pursuing 2nd year of Software Engineering training at Azimut for the 2024-2025 academic year.</p>
+                <p class="company"><i class="bi bi-building"></i> Institut Supérieur Azimut</p>
+                <p>Actuellement en 2ème année de formation en Génie Logiciel à l'Institut Azimut pour l'année académique 2024-2025.</p>
               </div>
 
               <div class="resume-item">
-                <h4>GCE Advanced Level in Sciences</h4>
+                <h4>GCE Advanced Level en Sciences</h4>
                 <h5>2022-2023</h5>
                 <p class="company"><i class="bi bi-building"></i> GBHS Yaoundé</p>
-                <p>Completed Advanced Level studies in sciences at Government Bilingual High School Yaoundé.</p>
+                <p>Études de niveau avancé en sciences complétées au Lycée Bilingue de Yaoundé.</p>
               </div>
             </div>
 
@@ -458,12 +458,12 @@
               <h3><i class="bi bi-award me-2"></i>Certifications</h3>
 
               <div class="resume-item">
-                <h4>W3Schools HTML and CSS Certification</h4>
+                <h4>Certification W3Schools HTML et CSS</h4>
                 <h5>2023</h5>
               </div>
 
               <div class="resume-item">
-                <h4>W3Schools SQL Certification</h4>
+                <h4>Certification W3Schools SQL</h4>
                 <h5>2024</h5>
               </div>
             </div>
