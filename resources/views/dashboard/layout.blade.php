@@ -103,6 +103,15 @@
             <a class="nav-link {{ request()->routeIs('dashboard.portfolio.*') ? 'active' : '' }}" href="{{ route('dashboard.portfolio.index') }}">
                 <i class="bi bi-briefcase me-2"></i> Portfolio Items
             </a>
+            <a class="nav-link {{ request()->routeIs('dashboard.quotes.*') ? 'active' : '' }}" href="{{ route('dashboard.quotes.index') }}">
+                <i class="bi bi-envelope-paper me-2"></i> Demandes de Devis
+                @php
+                    $newQuotesCount = \App\Models\Quote::where('status', 'nouveau')->count();
+                @endphp
+                @if($newQuotesCount > 0)
+                    <span class="badge bg-danger rounded-pill ms-2">{{ $newQuotesCount }}</span>
+                @endif
+            </a>
             <hr style="border-color: rgba(255,255,255,0.1);">
             <a class="nav-link" href="/" target="_blank">
                 <i class="bi bi-globe me-2"></i> View Portfolio Site

@@ -25,7 +25,7 @@
 
                 <div class="hero-actions">
                   <a href="#portfolio" class="btn btn-primary">Voir Mes Réalisations</a>
-                  <a href="#contact" class="btn btn-outline">Demander un Devis</a>
+                  <a href="/devis" class="btn btn-outline">Demander un Devis</a>
                 </div>
 
                 <div class="social-links">
