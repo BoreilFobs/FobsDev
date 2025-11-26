@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://fobsdev.com/</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Quote Request Page -->
+    <url>
+        <loc>https://fobsdev.com/devis</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio Items - Add dynamically or manually -->
+    <url>
+        <loc>https://fobsdev.com/fobssms</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fobsdev.com/assets/img/portfolio/FobsSMS/1.png</image:loc>
+            <image:title>FobsSMS - Système de Gestion Scolaire</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://fobsdev.com/educam</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fobsdev.com/assets/img/portfolio/Educam/1.png</image:loc>
+            <image:title>EDUCAM - Plateforme de Révision GCE</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://fobsdev.com/glowandchic</loc>
+        <lastmod>2025-11-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fobsdev.com/assets/img/portfolio/glowandchic/1.png</image:loc>
+            <image:title>Glow & Chic - Application Salon de Beauté</image:title>
+        </image:image>
+    </url>
+    
+</urlset>

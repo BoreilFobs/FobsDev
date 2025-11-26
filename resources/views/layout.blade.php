@@ -4,9 +4,122 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>FobsDev | @yield('title', "Portfolio")</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>@yield('title', 'FobsDev - Création de Sites Vitrines Professionnels en 7 Jours | Rome, Italie')</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="@yield('description', 'Développeur web freelance basé en Italie, spécialisé dans la création de sites vitrines professionnels livrés en 7 jours. Design moderne, responsive et optimisé SEO pour votre entreprise.')">
+  <meta name="keywords" content="@yield('keywords', 'développeur web, sites vitrines, création site web, développeur freelance, site web professionnel, Rome Italie, design responsive, SEO, livraison rapide, développement Laravel, React, sites vitrines professionnels')">
+  <meta name="author" content="Boreil Fobasso - FobsDev">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="{{ url()->current() }}">
+  
+  <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+  <meta property="og:locale" content="fr_IT">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="@yield('og_title', 'FobsDev - Sites Vitrines Professionnels en 7 Jours')">
+  <meta property="og:description" content="@yield('og_description', 'Création de sites vitrines professionnels de qualité. Design moderne, responsive et optimisé SEO. Basé en Italie, livraison garantie en 7 jours.')">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:site_name" content="FobsDev">
+  <meta property="og:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FobsDev - Développeur Web Professionnel">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="@yield('twitter_title', 'FobsDev - Sites Vitrines Professionnels')">
+  <meta name="twitter:description" content="@yield('twitter_description', 'Création de sites vitrines professionnels en 7 jours. Design moderne et responsive.')">
+  <meta name="twitter:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
+  <meta name="twitter:creator" content="@BoreilFobs">
+  
+  <!-- Additional SEO Tags -->
+  <meta name="language" content="French">
+  <meta name="geo.region" content="IT-RM">
+  <meta name="geo.placename" content="Rome">
+  <meta name="geo.position" content="41.902782;12.496366">
+  <meta name="ICBM" content="41.902782, 12.496366">
+  
+  <!-- Mobile Optimization -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="FobsDev">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#a86d37">
+  <meta name="msapplication-TileColor" content="#a86d37">
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Boreil Fobasso",
+    "url": "{{ url('/') }}",
+    "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
+    "sameAs": [
+      "https://www.linkedin.com/in/boreil-fobs-0206b0307/",
+      "https://github.com/BoreilFobs",
+      "https://t.me/BoreilFobs"
+    ],
+    "jobTitle": "Développeur Web & Mobile",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "FobsDev"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rome",
+      "addressCountry": "IT"
+    },
+    "email": "fobsboreil@gmail.com",
+    "telephone": "+393511262532"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "FobsDev",
+    "description": "Création de sites vitrines professionnels en 7 jours. Design moderne, responsive et optimisé SEO.",
+    "url": "{{ url('/') }}",
+    "logo": "{{ asset('assets/img/profile/Proile-main.png') }}",
+    "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
+    "telephone": "+393511262532",
+    "email": "fobsboreil@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rome",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.902782",
+      "longitude": "12.496366"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Italy"
+      },
+      {
+        "@type": "Country",
+        "name": "France"
+      }
+    ],
+    "priceRange": "€€",
+    "serviceType": [
+      "Création de Sites Vitrines",
+      "Développement Web",
+      "Design Responsive",
+      "Optimisation SEO"
+    ]
+  }
+  </script>
 
   <!-- Favicons -->
 <!-- Favicons -->
