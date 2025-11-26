@@ -1,5 +1,5 @@
 # Robots.txt pour FobsDev
-# https://fobsdev.com
+# https://fobs.dev
 
 User-agent: *
 Allow: /
@@ -10,7 +10,7 @@ Disallow: /dashboard
 Disallow: /storage/
 
 # Sitemap
-Sitemap: https://fobsdev.com/sitemap.xml
+Sitemap: https://fobs.dev/sitemap.xml
 
 # Crawl-delay for politeness
 Crawl-delay: 1

@@ -91,9 +91,9 @@
 
 ### Google Search Console
 1. Aller sur https://search.google.com/search-console
-2. Ajouter la propriété : https://fobsdev.com
+2. Ajouter la propriété : https://fobs.dev
 3. Vérifier la propriété (balise HTML ou DNS)
-4. Soumettre le sitemap : https://fobsdev.com/sitemap.xml
+4. Soumettre le sitemap : https://fobs.dev/sitemap.xml
 5. Surveiller les performances
 
 ### Google Analytics
@@ -152,7 +152,7 @@
 ## 🔗 Backlinks et Autorité
 
 ### Stratégies
-1. **Portfolio GitHub** : Lien vers fobsdev.com
+1. **Portfolio GitHub** : Lien vers fobs.dev
 2. **LinkedIn** : Ajouter site web dans profil
 3. **Répertoires professionnels** :
    - PagesJaunes.fr

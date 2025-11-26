@@ -52,7 +52,19 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://fobs.dev'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Domain
+    |--------------------------------------------------------------------------
+    |
+    | The primary domain name for the application. Used for SEO, sitemap,
+    | and canonical URLs.
+    |
+    */
+
+    'domain' => env('APP_DOMAIN', 'fobs.dev'),
 
     /*
     |--------------------------------------------------------------------------
