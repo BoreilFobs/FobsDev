@@ -6,11 +6,11 @@ echo ""
 
 # Variables de configuration
 PROJECT_DIR="/var/www/fobsdev"
-REPO_URL="git@github.com:BoreilFobs/FobsDev.git"
+REPO_URL="https://github.com/BoreilFobs/FobsDev.git"
 BRANCH="europe"
 DB_NAME="fobsdev"
-DB_USER="root"
-DB_PASS=""  # Sera demandé
+DB_USER="fobs"
+DB_PASS="fobs"  # Sera demandé
 
 echo "⚠️  ATTENTION: Ce script va:"
 echo "  1. Sauvegarder la base de données"
