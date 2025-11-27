@@ -172,4 +172,69 @@ class PortfolioItemController extends Controller
         return redirect()->route('dashboard.portfolio.index')
             ->with('success', 'Portfolio item deleted successfully!');
     }
+    
+    /**
+     * Delete a specific gallery image
+     */
+    public function deleteGalleryImage(string $id, int $index)
+    {
+        $portfolioItem = PortfolioItem::findOrFail($id);
+        $galleryImages = $portfolioItem->gallery_images ?? [];
+        
+        if (isset($galleryImages[$index])) {
+            // Delete the physical file
+            $imagePath = public_path($galleryImages[$index]);
+            if (file_exists($imagePath)) {
+                unlink($imagePath);
+            }
+            
+            // Remove from array
+            array_splice($galleryImages, $index, 1);
+            
+            // Update database
+            $portfolioItem->update(['gallery_images' => $galleryImages]);
+            
+            return response()->json([
+                'success' => true,
+                'message' => 'Image deleted successfully'
+            ]);
+        }
+        
+        return response()->json([
+            'success' => false,
+            'message' => 'Image not found'
+        ], 404);
+    }
+    
+    /**
+     * Reorder gallery images
+     */
+    public function reorderGallery(Request $request, string $id)
+    {
+        $portfolioItem = PortfolioItem::findOrFail($id);
+        $newOrder = $request->input('order', []);
+        
+        if (!is_array($newOrder)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid order data'
+            ], 400);
+        }
+        
+        $galleryImages = $portfolioItem->gallery_images ?? [];
+        $reorderedImages = [];
+        
+        foreach ($newOrder as $index) {
+            if (isset($galleryImages[$index])) {
+                $reorderedImages[] = $galleryImages[$index];
+            }
+        }
+        
+        $portfolioItem->update(['gallery_images' => $reorderedImages]);
+        
+        return response()->json([
+            'success' => true,
+            'message' => 'Gallery order updated successfully'
+        ]);
+    }
 }

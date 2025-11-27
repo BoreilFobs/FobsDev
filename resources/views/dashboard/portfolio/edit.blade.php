@@ -18,6 +18,104 @@
         border-radius: 6px;
         margin-bottom: 10px;
     }
+    
+    /* Gallery Management Styles */
+    .gallery-item-wrapper {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #c8b9aa;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: move;
+        transition: all 0.3s ease;
+        background: white;
+    }
+    
+    .gallery-item-wrapper:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(168, 109, 55, 0.3);
+        border-color: #a86d37;
+    }
+    
+    .gallery-item-wrapper.dragging {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    
+    .gallery-item-wrapper.drag-over {
+        border-color: #a86d37;
+        border-style: dashed;
+        background: rgba(168, 109, 55, 0.1);
+    }
+    
+    .gallery-thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .gallery-item-controls {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 10;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    
+    .delete-gallery-btn {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(220, 53, 69, 0.9);
+        border: none;
+        transition: all 0.2s;
+    }
+    
+    .delete-gallery-btn:hover {
+        background: #dc3545;
+        transform: scale(1.1);
+    }
+    
+    .gallery-order-badge {
+        background: rgba(168, 109, 55, 0.95);
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.85rem;
+    }
+    
+    .drag-handle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(168, 109, 55, 0.95);
+        color: white;
+        padding: 6px;
+        text-align: center;
+        font-size: 1.2rem;
+        cursor: move;
+    }
+    
+    #gallery-container {
+        min-height: 150px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border: 2px dashed #c8b9aa;
+    }
 </style>
 @endsection
 
@@ -193,10 +291,24 @@
                         @if($portfolioItem->gallery_images && count($portfolioItem->gallery_images) > 0)
                             <div class="col-12">
                                 <label class="form-label">Current Gallery Images</label>
-                                <div class="d-flex flex-wrap gap-2">
-                                    @foreach($portfolioItem->gallery_images as $image)
-                                        <img src="{{ asset($image) }}" alt="Gallery" 
-                                             style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;">
+                                <small class="text-muted d-block mb-2">
+                                    <i class="bi bi-info-circle"></i> Drag to reorder, click trash to delete
+                                </small>
+                                <div id="gallery-container" class="d-flex flex-wrap gap-3">
+                                    @foreach($portfolioItem->gallery_images as $index => $image)
+                                        <div class="gallery-item-wrapper" data-index="{{ $index }}" draggable="true">
+                                            <div class="gallery-item-controls">
+                                                <button type="button" class="btn btn-sm btn-danger delete-gallery-btn" 
+                                                        data-index="{{ $index }}" title="Delete image">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                                <span class="gallery-order-badge">{{ $index + 1 }}</span>
+                                            </div>
+                                            <img src="{{ asset($image) }}" alt="Gallery" class="gallery-thumbnail">
+                                            <div class="drag-handle">
+                                                <i class="bi bi-grip-vertical"></i>
+                                            </div>
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
@@ -294,8 +406,197 @@ document.addEventListener('DOMContentLoaded', function() {
             addTechnology(tech);
         });
     }
+    
+    // Initialize gallery management
+    initializeGalleryManagement();
 });
 
+// ============ GALLERY MANAGEMENT ============
+function initializeGalleryManagement() {
+    const galleryContainer = document.getElementById('gallery-container');
+    if (!galleryContainer) return;
+    
+    const items = galleryContainer.querySelectorAll('.gallery-item-wrapper');
+    let draggedItem = null;
+    
+    items.forEach(item => {
+        // Drag start
+        item.addEventListener('dragstart', function(e) {
+            draggedItem = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', this.innerHTML);
+        });
+        
+        // Drag end
+        item.addEventListener('dragend', function() {
+            this.classList.remove('dragging');
+            items.forEach(i => i.classList.remove('drag-over'));
+            
+            // Save new order
+            saveGalleryOrder();
+        });
+        
+        // Drag over
+        item.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            this.classList.add('drag-over');
+            return false;
+        });
+        
+        // Drag leave
+        item.addEventListener('dragleave', function() {
+            this.classList.remove('drag-over');
+        });
+        
+        // Drop
+        item.addEventListener('drop', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            
+            if (draggedItem !== this) {
+                // Swap positions
+                const allItems = [...galleryContainer.querySelectorAll('.gallery-item-wrapper')];
+                const draggedIndex = allItems.indexOf(draggedItem);
+                const targetIndex = allItems.indexOf(this);
+                
+                if (draggedIndex < targetIndex) {
+                    this.parentNode.insertBefore(draggedItem, this.nextSibling);
+                } else {
+                    this.parentNode.insertBefore(draggedItem, this);
+                }
+                
+                updateGalleryOrderBadges();
+            }
+            
+            this.classList.remove('drag-over');
+            return false;
+        });
+    });
+    
+    // Delete buttons
+    const deleteButtons = document.querySelectorAll('.delete-gallery-btn');
+    deleteButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const index = this.getAttribute('data-index');
+            deleteGalleryImage(index);
+        });
+    });
+}
+
+function updateGalleryOrderBadges() {
+    const items = document.querySelectorAll('.gallery-item-wrapper');
+    items.forEach((item, index) => {
+        const badge = item.querySelector('.gallery-order-badge');
+        if (badge) {
+            badge.textContent = index + 1;
+        }
+        item.setAttribute('data-index', index);
+    });
+}
+
+function saveGalleryOrder() {
+    const items = document.querySelectorAll('.gallery-item-wrapper');
+    const order = Array.from(items).map(item => parseInt(item.getAttribute('data-index')));
+    
+    fetch('{{ route("dashboard.portfolio.reorderGallery", $portfolioItem->id) }}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({ order: order })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast('Gallery order updated successfully', 'success');
+            updateGalleryOrderBadges();
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showToast('Failed to update gallery order', 'error');
+    });
+}
+
+function deleteGalleryImage(index) {
+    if (!confirm('Are you sure you want to delete this image?')) {
+        return;
+    }
+    
+    fetch('{{ route("dashboard.portfolio.deleteGalleryImage", ["portfolio" => $portfolioItem->id, "index" => "__INDEX__"]) }}'.replace('__INDEX__', index), {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const item = document.querySelector(`.gallery-item-wrapper[data-index="${index}"]`);
+            if (item) {
+                item.remove();
+                updateGalleryOrderBadges();
+                showToast('Image deleted successfully', 'success');
+                
+                // Reload page after 1 second to refresh the gallery
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
+            }
+        } else {
+            showToast('Failed to delete image', 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showToast('Failed to delete image', 'error');
+    });
+}
+
+function showToast(message, type = 'success') {
+    // Simple toast notification
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px 25px;
+        background: ${type === 'success' ? '#a86d37' : '#dc3545'};
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        z-index: 9999;
+        font-weight: 500;
+        animation: slideIn 0.3s ease-out;
+    `;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.style.animation = 'slideOut 0.3s ease-out';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+// Add animations
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideIn {
+        from { transform: translateX(400px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(400px); opacity: 0; }
+    }
+`;
+document.head.appendChild(style);
+
+// ============ FEATURES MANAGEMENT ============
 function addFeature(icon = '', title = '', description = '') {
     const container = document.getElementById('features-container');
     const featureDiv = document.createElement('div');

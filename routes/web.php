@@ -43,6 +43,12 @@ Route::middleware(['auth'])->prefix('dashboard')->group(function () {
         'destroy' => 'dashboard.portfolio.destroy',
     ]);
     
+    // Portfolio Gallery Image Management
+    Route::delete('/portfolio/{portfolio}/gallery/{index}', [PortfolioItemController::class, 'deleteGalleryImage'])
+        ->name('dashboard.portfolio.deleteGalleryImage');
+    Route::post('/portfolio/{portfolio}/gallery/reorder', [PortfolioItemController::class, 'reorderGallery'])
+        ->name('dashboard.portfolio.reorderGallery');
+    
     // Quote Management
     Route::get('/quotes', [QuoteController::class, 'index'])->name('dashboard.quotes.index');
     Route::get('/quotes/{quote}', [QuoteController::class, 'show'])->name('dashboard.quotes.show');
