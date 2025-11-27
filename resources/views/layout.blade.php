@@ -6,10 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>@yield('title', 'FobsDev - Création de Sites Vitrines Professionnels en 7 Jours | Pavia, Italie')</title>
+  <title>@yield('title', 'FobsDev - Développeur Web & Mobile')</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="@yield('description', 'Développeur web freelance basé en Italie, spécialisé dans la création de sites vitrines professionnels livrés en 7 jours. Design moderne, responsive et optimisé SEO pour votre entreprise.')">
+  <meta name="description" content="@yield('description', 'Développeur web freelance basé en Italie, spécialisé dans la création de sites web professionnels livrés en 7 jours. Design moderne, responsive et optimisé SEO pour votre entreprise.')">
   <meta name="keywords" content="@yield('keywords', 'développeur web, sites vitrines, création site web, développeur freelance, site web professionnel, Rome Italie, design responsive, SEO, livraison rapide, développement Laravel, React, sites vitrines professionnels')">
   <meta name="author" content="Boreil Fobasso - FobsDev">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -19,7 +19,7 @@
   <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
   <meta property="og:locale" content="fr_IT">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="@yield('og_title', 'FobsDev - Sites Vitrines Professionnels en 7 Jours')">
+  <meta property="og:title" content="@yield('og_title', 'FobsDev - Sites web Professionnels en 7 Jours')">
   <meta property="og:description" content="@yield('og_description', 'Création de sites vitrines professionnels de qualité. Design moderne, responsive et optimisé SEO. Basé en Italie, livraison garantie en 7 jours.')">
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:site_name" content="FobsDev">
@@ -30,8 +30,8 @@
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="@yield('twitter_title', 'FobsDev - Sites Vitrines Professionnels')">
-  <meta name="twitter:description" content="@yield('twitter_description', 'Création de sites vitrines professionnels en 7 jours. Design moderne et responsive.')">
+  <meta name="twitter:title" content="@yield('twitter_title', 'FobsDev - Sites web Professionnels')">
+  <meta name="twitter:description" content="@yield('twitter_description', 'Création de sites web professionnels en 7 jours. Design moderne et responsive.')">
   <meta name="twitter:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
   <meta name="twitter:creator" content="@BoreilFobs">
   
@@ -85,7 +85,7 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "FobsDev",
-    "description": "Création de sites vitrines professionnels en 7 jours. Design moderne, responsive et optimisé SEO.",
+    "description": "Création de sites web professionnels en 7 jours. Design moderne, responsive et optimisé SEO.",
     "url": "{{ url('/') }}",
     "logo": "{{ asset('assets/img/profile/Proile-main.png') }}",
     "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
