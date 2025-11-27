@@ -1,5 +1,7 @@
 @extends('layout')
-@section('title', "Educam")
+
+@section('title', 'Educam')
+
 @section('content')
 <main class="main">
 

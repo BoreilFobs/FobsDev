@@ -1,6 +1,7 @@
 @extends('dashboard.layout')
 
 @section('title', 'Portfolio Items')
+
 @section('page-title', 'Portfolio Items')
 
 @section('content')

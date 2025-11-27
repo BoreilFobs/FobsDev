@@ -1,6 +1,7 @@
 @extends('dashboard.layout')
 
 @section('title', 'Create Portfolio Item')
+
 @section('page-title', 'Add New Project')
 
 @section('styles')

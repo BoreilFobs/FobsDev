@@ -1,5 +1,7 @@
 @extends('layout')
-@section('title', "FobsSMS")
+
+@section('title', 'FobsSMS')
+
 @section('content')
 <main class="main">
 

@@ -1,5 +1,7 @@
 @extends('layout')
+
 @section('title', $portfolioItem->title)
+
 @section('content')
 <main class="main">
 
