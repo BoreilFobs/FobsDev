@@ -1,0 +1,127 @@
+═══════════════════════════════════════════════════════════
+    COMMANDES POUR DÉPLOYER SUR LE SERVEUR - fobs.dev
+═══════════════════════════════════════════════════════════
+
+📍 Chemin du projet: /var/www/fobsdev
+
+═══════════════════════════════════════════════════════════
+OPTION 1: CORRECTION RAPIDE (Recommandé)
+═══════════════════════════════════════════════════════════
+
+# Se connecter au serveur via SSH
+ssh votre-utilisateur@votre-serveur
+
+# Aller dans le dossier du projet
+cd /var/www/fobsdev
+
+# Pull les dernières modifications
+sudo -u www-data git pull origin europe
+
+# Exécuter le script de correction rapide
+sudo ./quick-fix.sh
+
+# C'est tout! Le site devrait fonctionner.
+
+
+═══════════════════════════════════════════════════════════
+OPTION 2: DÉPLOIEMENT COMPLET (Si problème persiste)
+═══════════════════════════════════════════════════════════
+
+# Se connecter au serveur
+ssh votre-utilisateur@votre-serveur
+
+# Aller dans /var/www
+cd /var/www/fobsdev
+
+# Pull le script
+sudo -u www-data git pull origin europe
+
+# Exécuter le déploiement complet
+sudo ./fresh-deploy.sh
+
+# Suivez les instructions à l'écran
+# Le script va:
+#   1. Sauvegarder la BDD
+#   2. Sauvegarder .env et uploads
+#   3. Supprimer le projet
+#   4. Cloner depuis GitHub
+#   5. Tout reconfigurer
+
+
+═══════════════════════════════════════════════════════════
+OPTION 3: COMMANDES MANUELLES (Si scripts ne fonctionnent pas)
+═══════════════════════════════════════════════════════════
+
+cd /var/www/fobsdev
+
+# 1. Pull les modifications
+sudo -u www-data git pull origin europe
+
+# 2. Supprimer TOUT le cache compilé
+sudo rm -rf storage/framework/views/*
+sudo rm -rf storage/framework/cache/data/*
+sudo rm -rf bootstrap/cache/*.php
+
+# 3. Nettoyer les caches Laravel
+sudo -u www-data php artisan config:clear
+sudo -u www-data php artisan route:clear
+sudo -u www-data php artisan view:clear
+sudo -u www-data php artisan cache:clear
+
+# 4. Mettre à jour les dépendances
+sudo -u www-data composer install --no-dev --optimize-autoloader
+
+# 5. Reconstruire les caches (sauf view)
+sudo -u www-data php artisan config:cache
+sudo -u www-data php artisan route:cache
+
+# 6. Permissions
+sudo chown -R www-data:www-data /var/www/fobsdev
+sudo chmod -R 755 /var/www/fobsdev
+sudo chmod -R 775 /var/www/fobsdev/storage
+sudo chmod -R 775 /var/www/fobsdev/bootstrap/cache
+
+# 7. Tester
+curl -I https://fobs.dev
+
+
+═══════════════════════════════════════════════════════════
+VÉRIFICATION APRÈS DÉPLOIEMENT
+═══════════════════════════════════════════════════════════
+
+# Voir les logs en temps réel
+tail -f /var/www/fobsdev/storage/logs/laravel.log
+
+# Vérifier les permissions
+ls -la /var/www/fobsdev/storage
+
+# Tester le site
+curl https://fobs.dev
+
+
+═══════════════════════════════════════════════════════════
+EN CAS DE PROBLÈME
+═══════════════════════════════════════════════════════════
+
+# Activer le debug (temporairement)
+sudo nano /var/www/fobsdev/.env
+# Changer: APP_DEBUG=true
+
+# Voir l'erreur dans le navigateur
+# Puis remettre APP_DEBUG=false
+
+
+═══════════════════════════════════════════════════════════
+INFORMATIONS IMPORTANTES
+═══════════════════════════════════════════════════════════
+
+Domaine: https://fobs.dev
+Chemin: /var/www/fobsdev
+Branche: europe
+Utilisateur web: www-data
+
+Scripts disponibles:
+  • quick-fix.sh      → Correction rapide sans réinstallation
+  • fresh-deploy.sh   → Déploiement complet depuis zéro
+
+Contact: fobsboreil@gmail.com
