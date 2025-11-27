@@ -124,4 +124,4 @@ Scripts disponibles:
   • quick-fix.sh      → Correction rapide sans réinstallation
   • fresh-deploy.sh   → Déploiement complet depuis zéro
 
-Contact: fobsboreil@gmail.com
+Contact: contact@fobs.dev

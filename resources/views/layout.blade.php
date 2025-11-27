@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>@yield('title', 'FobsDev - Création de Sites Vitrines Professionnels en 7 Jours | Rome, Italie')</title>
+  <title>@yield('title', 'FobsDev - Création de Sites Vitrines Professionnels en 7 Jours | Pavia, Italie')</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="@yield('description', 'Développeur web freelance basé en Italie, spécialisé dans la création de sites vitrines professionnels livrés en 7 jours. Design moderne, responsive et optimisé SEO pour votre entreprise.')">
@@ -72,11 +72,11 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Rome",
+      "addressLocality": "Pavia",
       "addressCountry": "IT"
     },
-    "email": "fobsboreil@gmail.com",
-    "telephone": "+393511262532"
+    "email": "contact@fobs.dev",
+    "telephone": "+393517699065"
   }
   </script>
   
@@ -89,11 +89,11 @@
     "url": "{{ url('/') }}",
     "logo": "{{ asset('assets/img/profile/Proile-main.png') }}",
     "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
-    "telephone": "+393511262532",
-    "email": "fobsboreil@gmail.com",
+    "telephone": "+393517699065",
+    "email": "contact@fobs.dev",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Rome",
+      "addressLocality": "Pavia",
       "addressCountry": "IT"
     },
     "geo": {
@@ -180,16 +180,16 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> --}}
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="/#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
 
       <div class="social-links text-center">
         <a href="https://x.com/BoreilFobs" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://facebook.com/BoreilFobs" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/boreil_fobs/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/+237690383299" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/fobsdev/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/+393517699065" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>

@@ -30,7 +30,7 @@
 
                 <div class="social-links">
                     <a href="https://t.me/BoreilFobs"><i class="bi bi-telegram"></i></a>
-                    <a href="https://wa.me/+393511262532"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/+393517699065"><i class="bi bi-whatsapp"></i></a>
                   <a href="https://www.github.com/BoreilFobs/"><i class="bi bi-github"></i></a>
                   <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/"><i class="bi bi-linkedin"></i></a>
                 </div>
@@ -80,17 +80,17 @@
                 <p class="profession">Développeur Web &amp; Mobile, Créateur de Sites Vitrines</p>
 
                 <div class="contact-links">
-                  <a href="mailto:fobsboreil@gmail.com" class="contact-item">
+                  <a href="mailto:contact@fobs.dev" class="contact-item">
                     <i class="bi bi-envelope"></i>
-                    fobsboreil@gmail.com
+                    contact@fobs.dev
                   </a>
-                  <a href="tel:+393511262532" class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    +39 351 126 2532
+                  <a href="tel:+393517699065" class="contact-item">
+                    <i class="bi bi-phone"></i>
+                    +39 351 769 9065
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    Rome, Italie
+                    Pavia, Italie
                   </a>
                 </div>
               </div>
@@ -156,7 +156,7 @@
                   <i class="bi bi-download"></i>
                   Télécharger CV
                 </a>
-                <a href="https://wa.me/+393511262532" class="btn btn-outline">
+                <a href="https://wa.me/+393517699065" class="btn btn-outline">
                   <i class="bi bi-chat-dots"></i>
                   Discutons
                 </a>
@@ -340,9 +340,9 @@
             </p>
               <h3 class="mt-4">Informations de Contact</h3>
               <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> Rome, Italie</li>
-                <li><i class="bi bi-envelope"></i> fobsboreil@gmail.com</li>
-                <li><i class="bi bi-phone"></i> +39 351 126 2532</li>
+                <li><i class="bi bi-geo-alt"></i> Pavia, Italie</li>
+                <li><i class="bi bi-envelope"></i> contact@fobs.dev</li>
+                <li><i class="bi bi-phone"></i> +39 351 769 9065</li>
                 <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
 
@@ -836,7 +836,7 @@
                 </div>
                 <div class="content">
                   <h4>Notre Localisation</h4>
-                  <p>Rome</p>
+                  <p>Pavia</p>
                   <p>Italie</p>
                 </div>
               </div>
@@ -847,7 +847,7 @@
                 </div>
                 <div class="content">
                   <h4>Numéro de Téléphone</h4>
-                  <p>+39 351 126 2532</p>
+                  <p>+39 351 769 9065</p>
                   {{-- <p>+1 6678 254445 41</p> --}}
                 </div>
               </div>
@@ -858,7 +858,7 @@
                 </div>
                 <div class="content">
                   <h4>Adresse Email</h4>
-                  <p>fobsboreil@gmail.com</p>
+                  <p>contact@fobs.dev</p>
                   {{-- <p>contact@example.com</p> --}}
                 </div>
               </div>
@@ -870,29 +870,46 @@
               <h3>Entrer en Contact</h3>
                 <p>Si vous avez des questions, des idées de projets, ou souhaitez simplement échanger, veuillez remplir le formulaire ci-dessous. J'ai hâte de vous lire!</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              @if(session('success'))
+                <div class="alert alert-success">
+                  {{ session('success') }}
+                </div>
+              @endif
+
+              @if($errors->any())
+                <div class="alert alert-danger">
+                  <ul class="mb-0">
+                    @foreach($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+              @endif
+
+              <form action="{{ route('contact.store') }}" method="POST" class="php-email-form">
+                @csrf
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Votre Nom" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Votre Nom" value="{{ old('name') }}" required>
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Votre Email" required="">
+                    <input type="email" class="form-control" name="email" placeholder="Votre Email" value="{{ old('email') }}" required>
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Sujet" value="{{ old('subject') }}" required>
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required>{{ old('message') }}</textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Chargement</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Votre message a été envoyé. Merci!</div>
+                    <div class="loading" style="display: none;">Envoi en cours...</div>
+                    <div class="error-message" style="display: none;"></div>
+                    <div class="sent-message" style="display: none;">Votre message a été envoyé. Merci !</div>
 
                     <button type="submit" class="btn">Envoyer le Message</button>
                   </div>

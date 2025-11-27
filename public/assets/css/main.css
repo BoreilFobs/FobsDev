@@ -2695,3 +2695,62 @@ section,
 .starter-section {
     /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Contact Form Messages
+--------------------------------------------------------------*/
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  border-left: 4px solid var(--accent-color);
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: transparent;
+  animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form .error-message {
+  background: #fee;
+  color: #d00;
+  border-left: 4px solid #d00;
+}
+
+.php-email-form .sent-message {
+  background: #e8f5e9;
+  color: #4caf50;
+  border-left: 4px solid #4caf50;
+}
+
+.php-email-form .loading.d-block,
+.php-email-form .error-message.d-block,
+.php-email-form .sent-message.d-block {
+  display: block !important;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

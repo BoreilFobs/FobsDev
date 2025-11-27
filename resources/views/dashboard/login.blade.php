@@ -69,11 +69,20 @@
                     </div>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
                         <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="remember" name="remember" checked>
+                        <label class="form-check-label" for="remember">
+                            Keep me logged in
+                        </label>
                     </div>
                 </div>
 
@@ -91,5 +100,25 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Check if user has permanent login token
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.querySelector('form');
+            const rememberCheckbox = document.getElementById('remember');
+            
+            loginForm.addEventListener('submit', function(e) {
+                if (rememberCheckbox.checked) {
+                    localStorage.setItem('fobsdev_remember_login', 'true');
+                } else {
+                    localStorage.removeItem('fobsdev_remember_login');
+                }
+            });
+            
+            // Pre-check remember me if previously set
+            if (localStorage.getItem('fobsdev_remember_login') === 'true') {
+                rememberCheckbox.checked = true;
+            }
+        });
+    </script>
 </body>
 </html>

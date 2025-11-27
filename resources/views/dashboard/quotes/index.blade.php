@@ -104,25 +104,25 @@
                     <tbody>
                         @forelse($quotes as $quote)
                             <tr>
-                                <td><strong>#{{ $quote->id }}</strong></td>
-                                <td>
+                                <td data-label="ID"><strong>#{{ $quote->id }}</strong></td>
+                                <td data-label="Client">
                                     <strong>{{ $quote->full_name }}</strong><br>
                                     <small class="text-muted">{{ $quote->company ?? 'Particulier' }}</small>
                                 </td>
-                                <td>
+                                <td data-label="Contact">
                                     <small>
                                         <i class="bi bi-envelope"></i> {{ $quote->email }}<br>
                                         <i class="bi bi-telephone"></i> {{ $quote->phone }}
                                     </small>
                                 </td>
-                                <td>
+                                <td data-label="Type">
                                     <span class="badge bg-info">
                                         {{ str_replace('_', ' ', ucfirst($quote->project_type)) }}
                                     </span>
                                 </td>
-                                <td>{{ number_format($quote->budget_range, 0, ',', ' ') }}€</td>
-                                <td>{{ str_replace('_', ' ', $quote->deadline) }}</td>
-                                <td>
+                                <td data-label="Budget">{{ number_format($quote->budget_range, 0, ',', ' ') }}€</td>
+                                <td data-label="Délai">{{ str_replace('_', ' ', $quote->deadline) }}</td>
+                                <td data-label="Statut">
                                     @php
                                         $statusColors = [
                                             'nouveau' => 'primary',
@@ -138,21 +138,23 @@
                                         {{ ucfirst(str_replace('_', ' ', $quote->status)) }}
                                     </span>
                                 </td>
-                                <td>
+                                <td data-label="Date">
                                     <small>{{ $quote->created_at->format('d/m/Y') }}</small><br>
                                     <small class="text-muted">{{ $quote->created_at->diffForHumans() }}</small>
                                 </td>
-                                <td>
-                                    <a href="{{ route('dashboard.quotes.show', $quote) }}" class="btn btn-sm btn-outline-primary" title="Voir détails">
-                                        <i class="bi bi-eye"></i>
-                                    </a>
-                                    <form action="{{ route('dashboard.quotes.destroy', $quote) }}" method="POST" class="d-inline" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce devis ?');">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-outline-danger" title="Supprimer">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                    </form>
+                                <td data-label="Actions">
+                                    <div class="btn-group">
+                                        <a href="{{ route('dashboard.quotes.show', $quote) }}" class="btn btn-sm btn-outline-primary" title="Voir détails">
+                                            <i class="bi bi-eye"></i> Voir
+                                        </a>
+                                        <form action="{{ route('dashboard.quotes.destroy', $quote) }}" method="POST" class="d-inline" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce devis ?');">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-outline-danger" title="Supprimer">
+                                                <i class="bi bi-trash"></i> Supprimer
+                                            </button>
+                                        </form>
+                                    </div>
                                 </td>
                             </tr>
                         @empty

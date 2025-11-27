@@ -71,11 +71,11 @@
     }
 
     .contact-info {
-        background: white;
+        background: color-mix(in srgb, var(--accent-color), white 95%);
         border-radius: 15px;
         padding: 30px;
         margin: 35px 0;
-        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
     }
 
     .contact-info h3 {
@@ -99,6 +99,51 @@
     .contact-item i {
         color: var(--accent-color);
         font-size: 1.3rem;
+    }
+
+    .steps-container {
+        margin-top: 25px;
+        text-align: left;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .step-item {
+        display: flex;
+        align-items: start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .step-number {
+        background: var(--accent-color);
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+        font-size: 1.1rem;
+    }
+
+    .step-content {
+        flex: 1;
+    }
+
+    .step-title {
+        color: var(--heading-color);
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    .step-description {
+        color: var(--default-color);
+        font-size: 0.95rem;
     }
 
     .btn-home {
@@ -147,6 +192,123 @@
         .success-icon i {
             font-size: 3rem;
         }
+
+        .contact-info {
+            padding: 20px 15px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.1rem;
+        }
+
+        .contact-item {
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-home {
+            padding: 15px 35px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .step-item {
+            gap: 12px;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            font-size: 1rem;
+        }
+
+        .step-title {
+            font-size: 0.95rem;
+        }
+
+        .step-description {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .success-section {
+            padding: 20px 10px;
+        }
+
+        .success-card {
+            padding: 30px 20px;
+            border-radius: 15px;
+        }
+
+        .success-card h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .success-card p {
+            font-size: 0.95rem;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .success-icon i {
+            font-size: 2.5rem;
+        }
+
+        .contact-info {
+            padding: 20px 15px;
+            margin: 25px 0;
+        }
+
+        .contact-info h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+            gap: 10px;
+        }
+
+        .contact-item i {
+            font-size: 1.1rem;
+        }
+
+        .btn-home {
+            padding: 14px 30px;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .steps-container {
+            margin-top: 20px;
+        }
+
+        .step-item {
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            font-size: 0.9rem;
+        }
+
+        .step-title {
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        .step-description {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
     }
 </style>
 
@@ -166,22 +328,43 @@
 
             <div class="contact-info">
                 <h3><i class="bi bi-clock-history"></i> Que se passe-t-il maintenant ?</h3>
-                <p style="margin-top: 15px; margin-bottom: 10px; color: var(--default-color);">
-                    1️⃣ Nous étudions votre projet en détail<br>
-                    2️⃣ Nous préparons un devis personnalisé<br>
-                    3️⃣ Nous vous contactons pour discuter des détails
-                </p>
+                
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong class="step-title">Analyse de votre projet</strong>
+                            <span class="step-description">Nous étudions en détail tous les aspects de votre demande</span>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong class="step-title">Préparation du devis personnalisé</strong>
+                            <span class="step-description">Nous créons une offre adaptée à vos besoins spécifiques</span>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong class="step-title">Prise de contact sous 24h</strong>
+                            <span class="step-description">Nous vous contactons pour discuter de votre projet</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="contact-info">
                 <h3>Besoin de nous joindre rapidement ?</h3>
                 <div class="contact-item">
                     <i class="bi bi-envelope-fill"></i>
-                    <span>admin@fobsdev.com</span>
+                    <span>contact@fobs.dev</span>
                 </div>
                 <div class="contact-item">
                     <i class="bi bi-telephone-fill"></i>
-                    <span>+39 351 126 2532</span>
+                    <span>+39 351 769 9065</span>
                 </div>
                 <div class="contact-item">
                     <i class="bi bi-whatsapp"></i>

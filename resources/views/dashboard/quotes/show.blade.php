@@ -27,9 +27,9 @@
         </div>
     @endif
 
-    <div class="row">
+    <div class="row g-3">
         <!-- Informations principales -->
-        <div class="col-lg-8">
+        <div class="col-12 col-lg-8">
             
             <!-- Informations Client -->
             <div class="card border-0 shadow-sm mb-4">
@@ -37,28 +37,28 @@
                     <h5 class="mb-0"><i class="bi bi-person-circle text-primary me-2"></i>Informations Client</h5>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Nom Complet</label>
                             <p class="mb-0 fw-bold">{{ $quote->full_name }}</p>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Entreprise</label>
                             <p class="mb-0">{{ $quote->company ?? 'Particulier' }}</p>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Email</label>
                             <p class="mb-0"><a href="mailto:{{ $quote->email }}">{{ $quote->email }}</a></p>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Téléphone</label>
                             <p class="mb-0"><a href="tel:{{ $quote->phone }}">{{ $quote->phone }}</a></p>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Ville</label>
                             <p class="mb-0">{{ $quote->city }}</p>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-12 col-md-6">
                             <label class="text-muted small">Pays</label>
                             <p class="mb-0">{{ $quote->country }}</p>
                         </div>
@@ -226,7 +226,7 @@
         </div>
 
         <!-- Sidebar - Actions et Statut -->
-        <div class="col-lg-4">
+        <div class="col-12 col-lg-4">
             
             <!-- Mise à jour du Statut -->
             <div class="card border-0 shadow-sm mb-4">

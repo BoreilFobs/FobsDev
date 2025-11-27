@@ -381,7 +381,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Téléphone <span class="required-indicator">*</span></label>
-                            <input type="tel" class="form-control" name="phone" required value="{{ old('phone') }}" placeholder="+39 351 126 2532">
+                            <input type="tel" class="form-control" name="phone" required value="{{ old('phone') }}" placeholder="+39 351 769 9065">
                             @error('phone')<small class="text-danger">{{ $message }}</small>@enderror
                         </div>
                         <div class="col-md-6 mb-3">
