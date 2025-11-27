@@ -19,19 +19,19 @@
   <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
   <meta property="og:locale" content="fr_IT">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="@yield('og_title', 'FobsDev - Sites web Professionnels en 7 Jours')">
+  <meta property="og:title" content="@yield('og_title', 'FobsDev - Développeur Web & Mobile')">
   <meta property="og:description" content="@yield('og_description', 'Création de sites vitrines professionnels de qualité. Design moderne, responsive et optimisé SEO. Basé en Italie, livraison garantie en 7 jours.')">
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:site_name" content="FobsDev">
   <meta property="og:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="FobsDev - Développeur Web Professionnel">
+  <meta property="og:image:alt" content="FobsDev - Développeur Web & Mobile">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="@yield('twitter_title', 'FobsDev - Sites web Professionnels')">
-  <meta name="twitter:description" content="@yield('twitter_description', 'Création de sites web professionnels en 7 jours. Design moderne et responsive.')">
+  <meta name="twitter:title" content="@yield('twitter_title', 'FobsDev - Développeur Web & Mobile')">
+  <meta name="twitter:description" content="@yield('twitter_description', 'Création de sites web professionnels . Design moderne et responsive.')">
   <meta name="twitter:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
   <meta name="twitter:creator" content="@BoreilFobs">
   
