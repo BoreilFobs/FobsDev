@@ -1,7 +1,7 @@
 {
-    "name": "Glow and Chic Admin Dashboard",
-    "short_name": "G&C Dashboard",
-    "description": "Administrative dashboard for Glow and Chic notifications and management",
+    "name": "FobsDev Admin Dashboard",
+    "short_name": "FobsDev Dashboard",
+    "description": "Administrative dashboard for FobsDev notifications and management",
     "start_url": "/dashboard",
     "display": "standalone",
     "background_color": "#2d2320",
