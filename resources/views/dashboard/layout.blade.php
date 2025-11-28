@@ -474,35 +474,76 @@
                 --sidebar-width: 280px;
             }
 
+            .main-content {
+                padding: 25px 20px;
+                padding-top: 85px;
+            }
+
+            .top-bar {
+                padding: 20px;
+            }
+
             .top-bar h4 {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
+            }
+
+            /* Espacer les cartes statistiques */
+            .stat-card {
+                padding: 25px;
+                margin-bottom: 20px;
+            }
+
+            .row.g-4 {
+                gap: 20px !important;
+            }
+
+            .col, [class*="col-"] {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 20px;
             }
 
             .btn-gradient {
-                padding: 11px 22px;
-                font-size: 0.9rem;
+                padding: 14px 24px;
+                font-size: 1rem;
                 width: 100%;
+                margin-bottom: 15px;
             }
 
             /* Tous les boutons en pleine largeur sur mobile */
             .btn:not(.btn-close) {
                 width: 100%;
-                margin-bottom: 8px;
+                margin-bottom: 15px;
+                padding: 12px 20px;
+                font-size: 1rem;
             }
 
             .btn-group {
                 flex-direction: column;
                 width: 100%;
-                gap: 8px;
+                gap: 12px;
             }
 
             .btn-group .btn {
                 width: 100%;
             }
 
+            /* Cards avec plus d'espace */
+            .card {
+                margin-bottom: 25px;
+            }
+
+            .card-header {
+                padding: 20px;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
             /* Tables responsive - Format carte */
             .table {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
 
             .table-responsive {
@@ -515,11 +556,11 @@
 
             .table tbody tr {
                 display: block;
-                margin-bottom: 22px;
+                margin-bottom: 25px;
                 border: 2px solid rgba(168, 109, 55, 0.2);
                 border-radius: 12px;
-                padding: 18px;
-                box-shadow: 0 3px 12px rgba(45, 35, 32, 0.08);
+                padding: 20px;
+                box-shadow: 0 4px 15px rgba(45, 35, 32, 0.08);
                 background: white;
             }
 
@@ -527,98 +568,127 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 11px 0;
+                padding: 15px 0;
                 border: none;
                 border-bottom: 1px solid rgba(45, 35, 32, 0.08);
             }
 
             .table tbody td:last-child {
                 border-bottom: none;
+                padding-top: 20px;
             }
 
             .table tbody td::before {
                 content: attr(data-label);
                 font-weight: 700;
                 color: var(--accent-color);
-                margin-right: 12px;
-                min-width: 100px;
+                margin-right: 15px;
+                min-width: 110px;
+                font-size: 0.95rem;
             }
 
             .table tbody td img {
-                width: 55px !important;
-                height: 55px !important;
+                width: 60px !important;
+                height: 60px !important;
             }
 
             .table .btn-group {
                 flex-direction: column;
                 width: 100%;
-                gap: 8px;
+                gap: 10px;
             }
 
             .table .btn-sm {
                 width: 100%;
+                padding: 10px 15px;
+                font-size: 0.9rem;
             }
 
             .stat-icon {
-                width: 55px;
-                height: 55px;
-                font-size: 1.7rem;
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+                margin-bottom: 15px;
             }
 
             .stat-card h3 {
-                font-size: 1.8rem;
+                font-size: 2rem;
+                margin-bottom: 8px;
+            }
+
+            .stat-card p {
+                font-size: 1rem;
+            }
+
+            /* Formulaires avec plus d'espace */
+            .mb-3 {
+                margin-bottom: 1.5rem !important;
+            }
+
+            .form-label {
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+
+            .form-control, .form-select {
+                padding: 12px 15px;
+                font-size: 16px;
+                margin-bottom: 5px;
             }
         }
 
         @media (max-width: 576px) {
             .main-content {
-                padding: 15px 10px;
-                padding-top: 70px;
+                padding: 20px 15px;
+                padding-top: 80px;
             }
 
             .top-bar {
-                padding: 15px;
+                padding: 18px 15px;
             }
 
             .stat-card {
-                padding: 20px;
+                padding: 25px 20px;
             }
 
             .sidebar .brand {
-                font-size: 1.3rem;
-                padding: 20px 15px;
+                font-size: 1.4rem;
+                padding: 25px 20px;
             }
 
             .sidebar .nav-link {
-                padding: 12px 20px;
-                font-size: 0.95rem;
+                padding: 15px 20px;
+                font-size: 1rem;
+                margin-bottom: 5px;
             }
 
             /* Cards responsive */
             .card-header {
-                padding: 15px;
+                padding: 20px 15px;
                 flex-direction: column;
                 text-align: center;
+                gap: 15px;
             }
 
             .card-body {
-                padding: 15px;
+                padding: 20px 15px;
             }
 
             /* Formulaires responsive */
             .form-control,
             .form-select {
                 font-size: 16px; /* Évite le zoom sur iOS */
+                padding: 14px 16px;
             }
 
             /* Actions responsive */
             .d-grid {
-                gap: 10px !important;
+                gap: 15px !important;
             }
 
             /* Row/Col responsive */
             .row.g-4 {
-                gap: 0.8rem !important;
+                gap: 1.5rem !important;
             }
 
             .col-12,
@@ -626,8 +696,38 @@
             .col-lg-3,
             .col-lg-4,
             .col-lg-8 {
-                padding-left: 8px;
-                padding-right: 8px;
+                padding-left: 12px;
+                padding-right: 12px;
+                margin-bottom: 20px;
+            }
+
+            /* Alert et messages */
+            .alert {
+                padding: 18px;
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+
+            /* Badges */
+            .badge {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            /* Modal responsive */
+            .modal-body {
+                padding: 25px 20px;
+            }
+
+            .modal-header {
+                padding: 20px;
+            }
+
+            .modal-footer {
+                padding: 20px;
+                gap: 12px;
+            }
+        }
             }
 
             /* Text plus petit */
