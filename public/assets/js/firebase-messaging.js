@@ -15,6 +15,18 @@ firebase.initializeApp(firebaseConfig);
 // Get messaging instance
 const messaging = firebase.messaging();
 
+// Register Service Worker for mobile support
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/firebase-messaging-sw.js')
+        .then((registration) => {
+            console.log('Service Worker registered successfully:', registration);
+            messaging.useServiceWorker(registration);
+        })
+        .catch((err) => {
+            console.error('Service Worker registration failed:', err);
+        });
+}
+
 // Request permission and get token
 function requestNotificationPermission() {
     console.log('Requesting notification permission...');
