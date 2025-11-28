@@ -59,4 +59,15 @@ Route::middleware(['auth'])->prefix('dashboard')->group(function () {
     Route::get('/contacts', [ContactController::class, 'index'])->name('dashboard.contacts.index');
     Route::get('/contacts/{contact}', [ContactController::class, 'show'])->name('dashboard.contacts.show');
     Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('dashboard.contacts.destroy');
+    
+    // Push Notification Management
+    Route::get('/notifications', function() {
+        return view('dashboard.notifications');
+    })->name('dashboard.notifications');
+    Route::post('/notifications/register-device', [App\Http\Controllers\NotificationController::class, 'registerDevice'])
+        ->name('dashboard.notifications.register');
+    Route::post('/notifications/unregister-device', [App\Http\Controllers\NotificationController::class, 'unregisterDevice'])
+        ->name('dashboard.notifications.unregister');
+    Route::post('/notifications/test', [App\Http\Controllers\NotificationController::class, 'testNotification'])
+        ->name('dashboard.notifications.test');
 });

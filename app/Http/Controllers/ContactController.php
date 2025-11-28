@@ -3,10 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Services\FirebaseService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
+    protected $firebase;
+
+    public function __construct(FirebaseService $firebase)
+    {
+        $this->firebase = $firebase;
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -16,7 +25,14 @@ class ContactController extends Controller
             'message' => 'required|string|max:5000',
         ]);
 
-        Contact::create($validated);
+        $contact = Contact::create($validated);
+
+        // Send push notification to admin
+        try {
+            $this->firebase->notifyNewContact($contact);
+        } catch (\Exception $e) {
+            Log::error('Failed to send contact notification: ' . $e->getMessage());
+        }
 
         // Si c'est une requête AJAX (du script validate.js)
         if ($request->ajax() || $request->wantsJson()) {

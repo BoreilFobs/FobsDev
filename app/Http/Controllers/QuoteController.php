@@ -3,10 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Quote;
+use App\Services\FirebaseService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class QuoteController extends Controller
 {
+    protected $firebase;
+
+    public function __construct(FirebaseService $firebase)
+    {
+        $this->firebase = $firebase;
+    }
+
     // Afficher le formulaire de devis (public)
     public function create()
     {
@@ -43,7 +52,14 @@ class QuoteController extends Controller
             'competitors' => 'nullable|array',
         ]);
 
-        Quote::create($validated);
+        $quote = Quote::create($validated);
+
+        // Send push notification to admin
+        try {
+            $this->firebase->notifyNewQuote($quote);
+        } catch (\Exception $e) {
+            Log::error('Failed to send quote notification: ' . $e->getMessage());
+        }
 
         return redirect()->route('quote.success')->with('success', 'Votre demande de devis a été envoyée avec succès ! Nous vous répondrons dans les plus brefs délais.');
     }

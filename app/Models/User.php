@@ -45,4 +45,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Get the admin devices for this user
+     */
+    public function adminDevices()
+    {
+        return $this->hasMany(AdminDevice::class);
+    }
 }

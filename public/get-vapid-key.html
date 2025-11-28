@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Firebase VAPID Key</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #a86d37;
+            border-bottom: 3px solid #a86d37;
+            padding-bottom: 10px;
+        }
+        .step {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #a86d37;
+            border-radius: 4px;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #2d2320;
+        }
+        code {
+            background: #2d2320;
+            color: #a86d37;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        a {
+            color: #a86d37;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .code-block {
+            background: #2d2320;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔔 Firebase VAPID Key Setup</h1>
+        
+        <div class="warning">
+            <strong>⚠️ Important:</strong> You need to get a VAPID key from Firebase Console to enable push notifications.
+        </div>
+
+        <h2>📋 Step-by-Step Instructions:</h2>
+
+        <div class="step">
+            <h3>Step 1: Open Firebase Console</h3>
+            <p>Go to: <a href="https://console.firebase.google.com/" target="_blank">https://console.firebase.google.com/</a></p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Select Your Project</h3>
+            <p>Click on project: <strong>glow-and-chic</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Go to Project Settings</h3>
+            <p>Click the gear icon ⚙️ next to "Project Overview" and select <strong>"Project settings"</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Navigate to Cloud Messaging</h3>
+            <p>Click on the <strong>"Cloud Messaging"</strong> tab at the top</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 5: Generate Web Push Certificate</h3>
+            <p>Scroll down to the <strong>"Web Push certificates"</strong> section</p>
+            <p>Click the <strong>"Generate key pair"</strong> button</p>
+            <p>Copy the generated key (it will look like a long string starting with "B...")</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 6: Update Your Code</h3>
+            <p>Open file: <code>public/assets/js/firebase-messaging.js</code></p>
+            <p>Find line 25 and replace with your VAPID key:</p>
+            <div class="code-block">
+messaging.getToken({<br>
+&nbsp;&nbsp;vapidKey: 'YOUR_COPIED_VAPID_KEY_HERE'<br>
+})
+            </div>
+        </div>
+
+        <div class="success">
+            <strong>✅ Alternative Method:</strong><br>
+            The code has been updated to try without a VAPID key first. If Firebase allows it for your project, notifications will work automatically. Otherwise, you'll need to follow the steps above.
+        </div>
+
+        <h2>🧪 Test After Setup:</h2>
+        <ol>
+            <li>Clear browser cache (Ctrl+Shift+Delete)</li>
+            <li>Reload the dashboard</li>
+            <li>Allow notification permission when prompted</li>
+            <li>Go to Dashboard → Notifications</li>
+            <li>Click "Send Test Notification"</li>
+        </ol>
+
+        <h2>📝 Configuration Reference:</h2>
+        <p><strong>Project ID:</strong> glow-and-chic</p>
+        <p><strong>Sender ID:</strong> 1364631713</p>
+        <p><strong>App ID:</strong> 1:1364631713:web:f8bd3db73cec67b76b50e0</p>
+
+        <div class="warning">
+            <strong>💡 Tip:</strong> If you see an error in the browser console about "invalid VAPID key", you MUST follow the steps above to generate one.
+        </div>
+    </div>
+</body>
+</html>
