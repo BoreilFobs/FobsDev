@@ -85,7 +85,7 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "FobsDev",
-    "description": "Création de sites web professionnels en 7 jours. Design moderne, responsive et optimisé SEO.",
+    "description": "Création de sites web professionnels en Express. Design moderne, responsive et optimisé SEO.",
     "url": "{{ url('/') }}",
     "logo": "{{ asset('assets/img/profile/Proile-main.png') }}",
     "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
@@ -105,6 +105,10 @@
       {
         "@type": "Country",
         "name": "Italy"
+      },
+      {
+        "@type": "Country",
+        "name": "Germany"
       },
       {
         "@type": "Country",

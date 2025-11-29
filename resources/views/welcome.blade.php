@@ -21,7 +21,7 @@
                 <h1>Fobs<span class="accent-text">Dev</span></h1>
                 <h2>Boreil Fobasso</h2>
                 <p class="lead">Je suis <span class="typed" data-typed-items="Développeur Web, Développeur Mobile, Créateur de Sites Vitrines"></span></p>
-                <p class="description">Spécialisé dans la création de sites vitrines professionnels de qualité, livrés en 7 jours. Basé en Italie, je transforme votre vision en une présence digitale élégante et performante.</p>
+                <p class="description">Spécialisé dans la création de sites web professionnels de qualité, livrés en Express. Je transforme votre vision en une présence digitale élégante et performante.</p>
 
                 <div class="hero-actions">
                   <a href="#portfolio" class="btn btn-primary">Voir Mes Réalisations</a>
