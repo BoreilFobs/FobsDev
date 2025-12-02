@@ -836,6 +836,19 @@
             <a class="nav-link {{ request()->routeIs('dashboard.portfolio.*') ? 'active' : '' }}" href="{{ route('dashboard.portfolio.index') }}">
                 <i class="bi bi-briefcase me-2"></i> Portfolio
             </a>
+            <a class="nav-link {{ request()->routeIs('dashboard.leads.*') ? 'active' : '' }}" href="{{ route('dashboard.leads.index') }}">
+                <i class="bi bi-briefcase-fill me-2"></i> Leads
+                @php
+                    try {
+                        $needsFollowUpCount = \App\Models\Lead::needsFollowUp()->count();
+                    } catch (\Exception $e) {
+                        $needsFollowUpCount = 0;
+                    }
+                @endphp
+                @if($needsFollowUpCount > 0)
+                    <span class="badge bg-danger rounded-pill ms-2">{{ $needsFollowUpCount }}</span>
+                @endif
+            </a>
             <a class="nav-link {{ request()->routeIs('dashboard.quotes.*') ? 'active' : '' }}" href="{{ route('dashboard.quotes.index') }}">
                 <i class="bi bi-file-earmark-text me-2"></i> Demandes de Devis
                 @php

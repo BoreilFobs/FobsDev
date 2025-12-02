@@ -4,10 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PortfolioItem;
+use App\Services\FirebaseService;
 use Illuminate\Support\Facades\Storage;
 
 class PortfolioItemController extends Controller
 {
+    protected $firebase;
+
+    public function __construct(FirebaseService $firebase)
+    {
+        $this->firebase = $firebase;
+    }
     /**
      * Display a listing of the resource.
      */
@@ -77,7 +84,10 @@ class PortfolioItemController extends Controller
             $validated['technologies'] = json_decode($validated['technologies'], true);
         }
 
-        PortfolioItem::create($validated);
+        $portfolio = PortfolioItem::create($validated);
+
+        // Send notification to all devices
+        $this->firebase->notifyNewPortfolio($portfolio);
 
         return redirect()->route('dashboard.portfolio.index')
             ->with('success', 'Portfolio item created successfully!');
@@ -157,6 +167,9 @@ class PortfolioItemController extends Controller
 
         $portfolioItem->update($validated);
 
+        // Send notification to all devices
+        $this->firebase->notifyPortfolioUpdated($portfolioItem);
+
         return redirect()->route('dashboard.portfolio.index')
             ->with('success', 'Portfolio item updated successfully!');
     }
@@ -167,7 +180,12 @@ class PortfolioItemController extends Controller
     public function destroy(string $id)
     {
         $portfolioItem = PortfolioItem::findOrFail($id);
+        $title = $portfolioItem->title;
         $portfolioItem->delete();
+
+        // Send notification to all devices
+        $deletedPortfolio = (object)['title' => $title];
+        $this->firebase->notifyPortfolioDeleted($deletedPortfolio);
 
         return redirect()->route('dashboard.portfolio.index')
             ->with('success', 'Portfolio item deleted successfully!');

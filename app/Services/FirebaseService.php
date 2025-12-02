@@ -142,4 +142,142 @@ class FirebaseService
 
         return $this->sendToAllAdmins($title, $body, $data);
     }
+
+    /**
+     * Send notification about new lead
+     */
+    public function notifyNewLead($lead)
+    {
+        $title = '🎯 Nouveau Lead Créé';
+        $body = "{$lead->company_name} - {$lead->status_label}";
+        $data = [
+            'type' => 'new_lead',
+            'lead_id' => (string)$lead->id,
+            'url' => route('dashboard.leads.show', $lead->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about lead status update
+     */
+    public function notifyLeadStatusUpdate($lead, $oldStatus, $newStatus)
+    {
+        $statusLabels = \App\Models\Lead::getStatuses();
+        $title = '📊 Statut Lead Mis à Jour';
+        $body = "{$lead->company_name}: {$statusLabels[$oldStatus]} → {$statusLabels[$newStatus]}";
+        $data = [
+            'type' => 'lead_status_update',
+            'lead_id' => (string)$lead->id,
+            'url' => route('dashboard.leads.show', $lead->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about lead deletion
+     */
+    public function notifyLeadDeleted($lead)
+    {
+        $title = '🗑️ Lead Supprimé';
+        $body = "{$lead->company_name} a été supprimé";
+        $data = [
+            'type' => 'lead_deleted',
+            'url' => route('dashboard.leads.index')
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about quote status update
+     */
+    public function notifyQuoteStatusUpdate($quote, $oldStatus, $newStatus)
+    {
+        $statusLabels = [
+            'nouveau' => 'Nouveau',
+            'en_cours' => 'En Cours',
+            'traite' => 'Traité',
+            'archive' => 'Archivé'
+        ];
+        $title = '📋 Statut Devis Mis à Jour';
+        $body = "{$quote->name}: {$statusLabels[$oldStatus]} → {$statusLabels[$newStatus]}";
+        $data = [
+            'type' => 'quote_status_update',
+            'quote_id' => (string)$quote->id,
+            'url' => route('dashboard.quotes.show', $quote->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about contact status update
+     */
+    public function notifyContactStatusUpdate($contact, $oldStatus, $newStatus)
+    {
+        $statusLabels = [
+            'nouveau' => 'Nouveau',
+            'lu' => 'Lu',
+            'traite' => 'Traité'
+        ];
+        $title = '✉️ Statut Message Mis à Jour';
+        $body = "{$contact->name}: {$statusLabels[$oldStatus]} → {$statusLabels[$newStatus]}";
+        $data = [
+            'type' => 'contact_status_update',
+            'contact_id' => (string)$contact->id,
+            'url' => route('dashboard.contacts.show', $contact->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about new portfolio item
+     */
+    public function notifyNewPortfolio($portfolio)
+    {
+        $title = '💼 Nouveau Projet Portfolio';
+        $body = "{$portfolio->title} a été ajouté au portfolio";
+        $data = [
+            'type' => 'new_portfolio',
+            'portfolio_id' => (string)$portfolio->id,
+            'url' => route('dashboard.portfolio.edit', $portfolio->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about portfolio item update
+     */
+    public function notifyPortfolioUpdated($portfolio)
+    {
+        $title = '📝 Projet Portfolio Modifié';
+        $body = "{$portfolio->title} a été mis à jour";
+        $data = [
+            'type' => 'portfolio_updated',
+            'portfolio_id' => (string)$portfolio->id,
+            'url' => route('dashboard.portfolio.edit', $portfolio->id)
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
+
+    /**
+     * Send notification about portfolio item deletion
+     */
+    public function notifyPortfolioDeleted($portfolio)
+    {
+        $title = '🗑️ Projet Portfolio Supprimé';
+        $body = "{$portfolio->title} a été supprimé du portfolio";
+        $data = [
+            'type' => 'portfolio_deleted',
+            'url' => route('dashboard.portfolio.index')
+        ];
+
+        return $this->sendToAllAdmins($title, $body, $data);
+    }
 }

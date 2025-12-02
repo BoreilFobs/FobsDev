@@ -91,10 +91,17 @@ class QuoteController extends Controller
             'admin_notes' => 'nullable|string'
         ]);
 
+        $oldStatus = $quote->status;
+
         $quote->update([
             'status' => $request->status,
             'admin_notes' => $request->admin_notes
         ]);
+
+        // Send notification if status changed
+        if ($oldStatus !== $request->status) {
+            $this->firebase->notifyQuoteStatusUpdate($quote, $oldStatus, $request->status);
+        }
 
         return redirect()->back()->with('success', 'Statut mis à jour avec succès !');
     }

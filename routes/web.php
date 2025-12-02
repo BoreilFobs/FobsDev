@@ -6,6 +6,7 @@ use App\Http\Controllers\PortfolioItemController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LeadController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -59,6 +60,19 @@ Route::middleware(['auth'])->prefix('dashboard')->group(function () {
     Route::get('/contacts', [ContactController::class, 'index'])->name('dashboard.contacts.index');
     Route::get('/contacts/{contact}', [ContactController::class, 'show'])->name('dashboard.contacts.show');
     Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('dashboard.contacts.destroy');
+    
+    // Lead Management
+    Route::resource('leads', LeadController::class)->names([
+        'index' => 'dashboard.leads.index',
+        'create' => 'dashboard.leads.create',
+        'store' => 'dashboard.leads.store',
+        'show' => 'dashboard.leads.show',
+        'edit' => 'dashboard.leads.edit',
+        'update' => 'dashboard.leads.update',
+        'destroy' => 'dashboard.leads.destroy',
+    ]);
+    Route::patch('/leads/{lead}/status', [LeadController::class, 'updateStatus'])->name('dashboard.leads.updateStatus');
+    Route::post('/leads/bulk-update', [LeadController::class, 'bulkUpdate'])->name('dashboard.leads.bulkUpdate');
     
     // Push Notification Management
     Route::get('/notifications', function() {
