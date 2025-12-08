@@ -836,8 +836,8 @@
                 </div>
                 <div class="content">
                   <h4>Notre Localisation</h4>
-                  <p>Pavia</p>
-                  <p>Italie</p>
+                  <p>Yaounde</p>
+                  <p>Cameroun</p>
                 </div>
               </div>
 
@@ -847,7 +847,7 @@
                 </div>
                 <div class="content">
                   <h4>Numéro de Téléphone</h4>
-                  <p>+39 351 769 9065</p>
+                  <p>+237 671 820 738</p>
                   {{-- <p>+1 6678 254445 41</p> --}}
                 </div>
               </div>
