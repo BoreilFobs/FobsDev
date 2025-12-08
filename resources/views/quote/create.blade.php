@@ -412,7 +412,7 @@
                         <label class="form-label">Type de Projet <span class="required-indicator">*</span></label>
                         <select class="form-select" name="project_type" required>
                             <option value="">Sélectionnez un type</option>
-                            <option value="site_vitrine" {{ old('project_type') == 'site_vitrine' ? 'selected' : '' }}>Site Vitrine</option>
+                            <option value="site_web" {{ old('project_type') == 'site_web' ? 'selected' : '' }}>Site Web</option>
                             <option value="e_commerce" {{ old('project_type') == 'e_commerce' ? 'selected' : '' }}>Site E-commerce</option>
                             <option value="application_web" {{ old('project_type') == 'application_web' ? 'selected' : '' }}>Application Web</option>
                             <option value="application_mobile" {{ old('project_type') == 'application_mobile' ? 'selected' : '' }}>Application Mobile</option>
@@ -551,7 +551,6 @@
                             <label class="form-label">Délai Souhaité <span class="required-indicator">*</span></label>
                             <select class="form-select" name="deadline" required>
                                 <option value="">Sélectionnez un délai</option>
-                                <option value="7_jours" {{ old('deadline') == '7_jours' ? 'selected' : '' }}>7 jours (Express)</option>
                                 <option value="2_semaines" {{ old('deadline') == '2_semaines' ? 'selected' : '' }}>2 semaines</option>
                                 <option value="1_mois" {{ old('deadline') == '1_mois' ? 'selected' : '' }}>1 mois</option>
                                 <option value="2_mois" {{ old('deadline') == '2_mois' ? 'selected' : '' }}>2 mois</option>

@@ -24,7 +24,7 @@ return new class extends Migration
             
             // Type de projet
             $table->enum('project_type', [
-                'site_vitrine',
+                'site_web',
                 'e_commerce',
                 'application_web',
                 'application_mobile',
@@ -45,7 +45,6 @@ return new class extends Migration
             // Budget et délai
             $table->decimal('budget_range', 10, 2); // Budget en euros
             $table->enum('deadline', [
-                '7_jours',
                 '2_semaines',
                 '1_mois',
                 '2_mois',

@@ -87,7 +87,7 @@
                                     <td data-label="Email">{{ $quote->email }}</td>
                                     <td data-label="Type">
                                         @switch($quote->project_type)
-                                            @case('site_vitrine') Site Vitrine @break
+                                            @case('site_web') Site Web @break
                                             @case('e_commerce') E-commerce @break
                                             @case('application_web') Application Web @break
                                             @case('application_mobile') Application Mobile @break

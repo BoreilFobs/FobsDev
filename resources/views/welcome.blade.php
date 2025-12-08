@@ -20,8 +20,8 @@
               <div class="hero-text">
                 <h1>Fobs<span class="accent-text">Dev</span></h1>
                 <h2>Boreil Fobasso</h2>
-                <p class="lead">Je suis <span class="typed" data-typed-items="Développeur Web, Développeur Mobile, Créateur de Sites Vitrines"></span></p>
-                <p class="description">Spécialisé dans la création de sites web professionnels de qualité, livrés en Express. Je transforme votre vision en une présence digitale élégante et performante.</p>
+                <p class="lead">Je suis <span class="typed" data-typed-items="Développeur Web, Développeur Mobile"></span></p>
+                <p class="description">Développeur web et mobile professionnel spécialisé dans la création de solutions digitales sur mesure pour entreprises et professionnels.</p>
 
                 <div class="hero-actions">
                   <a href="#portfolio" class="btn btn-primary">Voir Mes Réalisations</a>
@@ -30,7 +30,7 @@
 
                 <div class="social-links">
                     <a href="https://t.me/BoreilFobs"><i class="bi bi-telegram"></i></a>
-                    <a href="https://wa.me/+393517699065"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/+237671820738"><i class="bi bi-whatsapp"></i></a>
                   <a href="https://www.github.com/BoreilFobs/"><i class="bi bi-github"></i></a>
                   <a href="https://www.linkedin.com/in/boreil-fobs-0206b0307/"><i class="bi bi-linkedin"></i></a>
                 </div>
@@ -77,20 +77,20 @@
 
               <div class="profile-content">
                 <h3>Boreil Fobasso</h3>
-                <p class="profession">Développeur Web &amp; Mobile, Créateur de Sites Vitrines</p>
+                <p class="profession">Développeur Web &amp; Mobile, Créateur de Sites Web</p>
 
                 <div class="contact-links">
                   <a href="mailto:contact@fobs.dev" class="contact-item">
                     <i class="bi bi-envelope"></i>
                     contact@fobs.dev
                   </a>
-                  <a href="tel:+393517699065" class="contact-item">
+                  <a href="tel:+237671820738" class="contact-item">
                     <i class="bi bi-phone"></i>
-                    +39 351 769 9065
+                    +237 671 820 738
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    Pavia, Italie
+                    Yaoundé, Cameroun
                   </a>
                 </div>
               </div>
@@ -106,9 +106,9 @@
 
               <div class="description">
 
-                <p>Développeur web et mobile basé en Italie, spécialisé dans la création de sites vitrines professionnels de haute qualité. Je vous offre un service rapide et efficace avec une livraison garantie en 7 jours, sans compromis sur la qualité.</p>
+                <p>Développeur web et mobile passionné, je crée des solutions digitales modernes et performantes adaptées à vos besoins. Mon engagement : qualité, innovation et respect de vos délais.</p>
 
-                <p>Mon expertise couvre la conception de sites vitrines modernes, responsives et optimisés pour le référencement. Que vous soyez une petite entreprise, un artisan ou un professionnel indépendant, je crée votre présence en ligne avec un design élégant et une expérience utilisateur exceptionnelle.</p>
+                <p>Mon expertise couvre la conception d'applications web et mobiles modernes, responsives et optimisées pour le référencement. Que vous soyez une petite entreprise, un artisan ou un professionnel indépendant, je crée votre présence digitale avec un design élégant et une excellente expérience utilisateur.</p>
 
               </div>
 
@@ -119,8 +119,8 @@
                   <div class="stat-label">Sites Livrés</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">7</div>
-                  <div class="stat-label">Jours de Livraison</div>
+                  <div class="stat-number">—</div>
+                  <div class="stat-label">Délais selon projet</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number">100%</div>
@@ -130,9 +130,9 @@
 
               <div class="details-grid">
                 <div class="detail-row">
-                  <div class="detail-item">
+                    <div class="detail-item">
                     <span class="detail-label">Spécialisation</span>
-                    <span class="detail-value">Sites Vitrines Professionnels</span>
+                    <span class="detail-value">Développement Web &amp; Mobile</span>
                   </div>
                   <div class="detail-item">
                     <span class="detail-label">Expérience</span>
@@ -144,9 +144,9 @@
                     <span class="detail-label">Formation</span>
                     <span class="detail-value">Ingénierie Logicielle</span>
                   </div>
-                  <div class="detail-item">
+                    <div class="detail-item">
                     <span class="detail-label">Langues</span>
-                    <span class="detail-value">Français, Italien, Anglais</span>
+                    <span class="detail-value">Français, Anglais</span>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@
                   <i class="bi bi-download"></i>
                   Télécharger CV
                 </a>
-                <a href="https://wa.me/+393517699065" class="btn btn-outline">
+                <a href="https://wa.me/+237671820738" class="btn btn-outline">
                   <i class="bi bi-chat-dots"></i>
                   Discutons
                 </a>
@@ -222,7 +222,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Compétences</h2>
-        <p>Mon expertise technique couvre le développement front-end et back-end, me permettant de créer des sites vitrines professionnels performants et élégants. Je maîtrise les technologies modernes pour vous offrir une présence en ligne de qualité supérieure, livrée rapidement et adaptée à vos besoins spécifiques.</p>
+        <p>Mon expertise technique couvre le développement front-end et back-end, me permettant de créer des sites web professionnels performants et élégants. Je maîtrise les technologies modernes pour vous offrir une présence en ligne de qualité supérieure, livrée selon des délais adaptés à vos besoins spécifiques.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -340,9 +340,9 @@
             </p>
               <h3 class="mt-4">Informations de Contact</h3>
               <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> Pavia, Italie</li>
+                <li><i class="bi bi-geo-alt"></i> Yaounde, Cameroon</li>
                 <li><i class="bi bi-envelope"></i> contact@fobs.dev</li>
-                <li><i class="bi bi-phone"></i> +39 351 769 9065</li>
+                <li><i class="bi bi-phone"></i> +237 671 820 738</li>
                 <li><i class="bi bi-linkedin"></i>Boreil Fobs </li>
               </ul>
 
@@ -482,7 +482,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Découvrez une sélection de sites vitrines professionnels que j'ai créés pour mes clients en Europe. Chaque projet démontre mon engagement envers la qualité, la créativité et la livraison rapide. Des designs élégants aux expériences utilisateurs intuitives, mon portfolio illustre la diversité des solutions que j'apporte à chaque collaboration.</p>
+        <p>Découvrez une sélection de sites web professionnels que j'ai créés pour mes clients en Europe. Chaque projet démontre mon engagement envers la qualité, la créativité et des délais adaptés. Des designs élégants aux expériences utilisateurs intuitives, mon portfolio illustre la diversité des solutions que j'apporte à chaque collaboration.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -543,7 +543,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Découvrez ma gamme de services conçus pour propulser votre entreprise et renforcer votre présence digitale. De la création de sites vitrines professionnels aux solutions web sur mesure, je livre des résultats de qualité en 7 jours, adaptés à vos objectifs uniques.</p>
+        <p>Découvrez ma gamme de services conçus pour propulser votre entreprise et renforcer votre présence digitale. De la création de sites web professionnels aux solutions web et mobiles sur mesure, j'interviens en Français et en Anglais. Les délais sont adaptés à chaque projet.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -583,11 +583,11 @@
               </a>
               <h3>
                 <a href="#">
-                  Sites Vitrines <span>Professionnels</span>
+                  Sites Web <span>Professionnels</span>
                 </a>
               </h3>
               <p>
-                Création de sites vitrines élégants et performants, livrés en 7 jours. Design moderne, responsive et optimisé SEO pour maximiser votre visibilité en ligne.
+                Création de sites web élégants et performants, avec un design moderne, responsive et optimisé SEO pour maximiser votre visibilité en ligne. Délais adaptés selon la complexité du projet.
               </p>
             </div>
           </div>
@@ -655,11 +655,11 @@
               </a>
               <h3>
                 <a href="#">
-                  Livraison <span>Rapide</span>
+                  Livraison <span>Adaptée</span>
                 </a>
               </h3>
               <p>
-                Votre site professionnel livré en 7 jours. Service rapide et efficace sans compromis sur la qualité du résultat final.
+                Délais de livraison adaptés selon la nature et la complexité du projet. Nous définissons un planning réaliste et clair dès le début.
               </p>
             </div>
           </div>
@@ -693,7 +693,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Témoignages</h2>
-        <p>Découvrez ce que mes clients d'Europe disent de leur expérience avec moi—des retours authentiques sur les résultats, le professionnalisme et l'impact de mes services de création de sites vitrines.</p>
+        <p>Découvrez ce que mes clients disent de leur expérience avec moi—des retours authentiques sur les résultats, le professionnalisme et l'impact de mes services de développement web et mobile.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -705,7 +705,7 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Boreil a créé un site vitrine magnifique pour mon restaurant en seulement 7 jours. Le design est moderne et nos réservations en ligne ont augmenté de 40%. Service excellent!</p>
+              <p>Boreil a créé un site web magnifique pour mon restaurant rapidement. Le design est moderne et nos réservations en ligne ont augmenté de 40%. Service excellent!</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">
@@ -759,7 +759,7 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Professionnel, créatif et toujours disponible. Mon site vitrine pour mon studio de photographie est exactement ce que je voulais. Je recommande vivement!</p>
+              <p>Professionnel, créatif et toujours disponible. Mon site web pour mon studio de photographie est exactement ce que je voulais. Je recommande vivement!</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=96&h=96&facepad=2" alt="Client">

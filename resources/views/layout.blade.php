@@ -9,18 +9,18 @@
   <title>@yield('title', 'FobsDev - Développeur Web & Mobile')</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="@yield('description', 'Développeur web freelance basé en Italie, spécialisé dans la création de sites web professionnels livrés en 7 jours. Design moderne, responsive et optimisé SEO pour votre entreprise.')">
-  <meta name="keywords" content="@yield('keywords', 'développeur web, sites vitrines, création site web, développeur freelance, site web professionnel, Rome Italie, design responsive, SEO, livraison rapide, développement Laravel, React, sites vitrines professionnels')">
+  <meta name="description" content="@yield('description', 'Développeur web et mobile basé à Yaoundé, Cameroun. Solutions web et mobiles sur mesure, disponibles en Français et Anglais.')">
+  <meta name="keywords" content="@yield('keywords', 'développeur web, développeur mobile, développement web, applications mobiles, Yaoundé, Cameroun, design responsive, SEO, Laravel, React')">
   <meta name="author" content="Boreil Fobasso - FobsDev">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <link rel="canonical" href="{{ url()->current() }}">
   
   <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
-  <meta property="og:locale" content="fr_IT">
+  <meta property="og:locale" content="fr_CM">
   <meta property="og:type" content="website">
   <meta property="og:title" content="@yield('og_title', 'FobsDev - Développeur Web & Mobile')">
-  <meta property="og:description" content="@yield('og_description', 'Création de sites vitrines professionnels de qualité. Design moderne, responsive et optimisé SEO. Basé en Italie, livraison garantie en 7 jours.')">
+  <meta property="og:description" content="@yield('og_description', 'Développement web et mobile sur mesure. Basé à Yaoundé, Cameroun. Services disponibles en Français et Anglais.')">
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:site_name" content="FobsDev">
   <meta property="og:image" content="{{ asset('assets/img/profile/Proile-main.png') }}">
@@ -37,10 +37,10 @@
   
   <!-- Additional SEO Tags -->
   <meta name="language" content="French">
-  <meta name="geo.region" content="IT-RM">
-  <meta name="geo.placename" content="Rome">
-  <meta name="geo.position" content="41.902782;12.496366">
-  <meta name="ICBM" content="41.902782, 12.496366">
+  <meta name="geo.region" content="CM">
+  <meta name="geo.placename" content="Yaoundé">
+  <meta name="geo.position" content="3.8480;11.5021">
+  <meta name="ICBM" content="3.8480, 11.5021">
   
   <!-- Mobile Optimization -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -72,11 +72,11 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Pavia",
-      "addressCountry": "IT"
+      "addressLocality": "Yaoundé",
+      "addressCountry": "CM"
     },
     "email": "contact@fobs.dev",
-    "telephone": "+393517699065"
+    "telephone": "+237 671 820 738"
   }
   </script>
   
@@ -85,30 +85,26 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "FobsDev",
-    "description": "Création de sites web professionnels en Express. Design moderne, responsive et optimisé SEO.",
+    "description": "Développement web et mobile sur mesure. Design moderne, responsive et optimisé SEO.",
     "url": "{{ url('/') }}",
     "logo": "{{ asset('assets/img/profile/Proile-main.png') }}",
     "image": "{{ asset('assets/img/profile/Proile-main.png') }}",
-    "telephone": "+393517699065",
+    "telephone": "+237 671 820 738",
     "email": "contact@fobs.dev",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Pavia",
-      "addressCountry": "IT"
+      "addressLocality": "Yaoundé",
+      "addressCountry": "CM"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "41.902782",
-      "longitude": "12.496366"
+      "latitude": "3.8480",
+      "longitude": "11.5021"
     },
     "areaServed": [
       {
         "@type": "Country",
-        "name": "Italy"
-      },
-      {
-        "@type": "Country",
-        "name": "Germany"
+        "name": "Cameroon"
       },
       {
         "@type": "Country",
@@ -117,8 +113,7 @@
     ],
     "priceRange": "€€",
     "serviceType": [
-      "Création de Sites Vitrines",
-      "Développement Web",
+      "Développement Web & Mobile",
       "Design Responsive",
       "Optimisation SEO"
     ]
@@ -192,7 +187,7 @@
         <a href="https://x.com/BoreilFobs" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="https://facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/fobsdev/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/+393517699065" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://wa.me/+237671820738 class="whatsapp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
