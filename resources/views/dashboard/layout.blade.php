@@ -184,12 +184,15 @@
         /* Stat Cards - Fond blanc uniforme */
         .stat-card {
             background: white;
-            border-radius: 15px;
-            padding: 28px;
-            box-shadow: 0 4px 15px rgba(45, 35, 32, 0.1);
-            transition: all 0.3s;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(45, 35, 32, 0.08);
+            transition: all 0.2s;
             border: 2px solid transparent;
             height: 100%;
+            display: flex;
+            gap: 12px;
+            align-items: center;
         }
 
         .stat-card:hover {
@@ -199,24 +202,24 @@
         }
 
         .stat-icon {
-            width: 65px;
-            height: 65px;
-            border-radius: 14px;
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 1.4rem;
             background: var(--accent-color);
             color: white;
-            margin-bottom: 16px;
-            box-shadow: 0 6px 18px rgba(168, 109, 55, 0.3);
+            margin-bottom: 0;
+            box-shadow: 0 4px 12px rgba(168, 109, 55, 0.2);
         }
 
         .stat-card h3 {
-            font-size: 2.2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: var(--heading-color);
-            margin: 12px 0;
+            margin: 0;
         }
 
         .stat-card p {
@@ -224,6 +227,34 @@
             font-weight: 600;
             opacity: 0.85;
             margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Force stats rows to occupy half the viewport height and center items */
+        .stats-grid {
+            min-height: 50vh;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .stat-card {
+                padding: 12px;
+                gap: 10px;
+            }
+
+            .stat-icon {
+                width: 44px;
+                height: 44px;
+                font-size: 1.1rem;
+            }
+
+            .stat-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .stats-grid {
+                min-height: 50vh;
+            }
         }
 
         /* Buttons - Marron uniforme */

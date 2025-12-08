@@ -38,10 +38,34 @@
 
     .stat-card {
         cursor: default;
+        background: white;
+        border-radius: 12px;
+        padding: 14px;
+        box-shadow: 0 6px 14px rgba(45, 35, 32, 0.06);
+        display: flex;
+        gap: 12px;
+        align-items: center;
     }
 
     .stat-card:hover {
         transform: none;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        color: white;
+        box-shadow: 0 4px 10px rgba(168, 109, 55, 0.12);
+    }
+
+    .stats-grid {
+        min-height: 50vh;
+        align-items: center;
     }
 
     /* Mobile responsive */
@@ -56,15 +80,16 @@
         }
 
         .stats-grid {
-            gap: 15px;
+            gap: 12px;
+            min-height: 50vh;
         }
 
         .stat-card {
-            padding: 20px;
+            padding: 12px;
         }
 
         .stat-card h3 {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
 
         /* Scroll horizontal */

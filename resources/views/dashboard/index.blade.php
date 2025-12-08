@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row g-4">
+    <div class="row g-4 stats-grid">
         <!-- Portfolio Stats -->
         <div class="col-md-6 col-lg-3">
             <div class="stat-card">
