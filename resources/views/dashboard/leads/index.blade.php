@@ -61,6 +61,7 @@
         font-size: 1.25rem;
         color: white;
         box-shadow: 0 4px 10px rgba(168, 109, 55, 0.12);
+        flex-shrink: 0;
     }
 
     .stats-grid {
@@ -68,28 +69,10 @@
         align-items: center;
     }
 
-    /* Mobile responsive */
+    /* Remove local mobile styles (use global ones from layout) */
     @media (max-width: 768px) {
         .filters-mobile {
             margin-bottom: 20px;
-        }
-
-        .btn-add-lead {
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .stats-grid {
-            gap: 12px;
-            min-height: 50vh;
-        }
-
-        .stat-card {
-            padding: 12px;
-        }
-
-        .stat-card h3 {
-            font-size: 1.4rem;
         }
 
         /* Scroll horizontal */
@@ -159,8 +142,8 @@
     </div>
 
     <!-- Statistics Cards -->
-    <div class="row g-4 mb-4 stats-grid">
-        <div class="col-12 col-md-6 col-lg-3">
+    <div class="stats-grid mb-4">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                     <i class="bi bi-collection"></i>
@@ -171,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                     <i class="bi bi-hourglass-split"></i>
@@ -182,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                     <i class="bi bi-graph-up"></i>
@@ -193,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
                     <i class="bi bi-check-circle"></i>

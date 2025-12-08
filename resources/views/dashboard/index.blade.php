@@ -6,9 +6,9 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row g-4 stats-grid">
+    <div class="stats-grid">
         <!-- Portfolio Stats -->
-        <div class="col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-briefcase-fill"></i>
@@ -19,7 +19,7 @@
         </div>
 
         <!-- Nouvelles demandes de devis -->
-        <div class="col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-file-earmark-text-fill"></i>
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Nouveaux messages -->
-        <div class="col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-envelope-fill"></i>
@@ -47,7 +47,7 @@
         </div>
 
         <!-- Projets actifs -->
-        <div class="col-md-6 col-lg-3">
+        <div>
             <div class="stat-card">
                 <div class="stat-icon">
                     <i class="bi bi-check-circle-fill"></i>

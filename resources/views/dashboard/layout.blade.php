@@ -230,10 +230,17 @@
             font-size: 0.9rem;
         }
 
-        /* Force stats rows to occupy half the viewport height and center items */
+        /* Stats grid - CSS Grid layout for consistent sizing */
         .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             min-height: 50vh;
             align-items: center;
+        }
+
+        .stats-grid > div {
+            grid-column: span 1;
         }
 
         @media (max-width: 768px) {
@@ -252,7 +259,10 @@
                 font-size: 1.4rem;
             }
 
+            /* 2x2 grid on mobile */
             .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
                 min-height: 50vh;
             }
         }
