@@ -39,11 +39,11 @@
     .stat-card {
         cursor: default;
         background: white;
-        border-radius: 12px;
-        padding: 14px;
+        border-radius: 16px;
+        padding: 28px 20px;
         box-shadow: 0 6px 14px rgba(45, 35, 32, 0.06);
         display: flex;
-        gap: 12px;
+        gap: 18px;
         align-items: center;
     }
 
@@ -52,16 +52,27 @@
     }
 
     .stat-icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 10px;
+        width: 72px;
+        height: 72px;
+        border-radius: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+        font-size: 2rem;
         color: white;
         box-shadow: 0 4px 10px rgba(168, 109, 55, 0.12);
         flex-shrink: 0;
+    }
+
+    .stat-card h3 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .stat-card p {
+        font-size: 1rem;
+        margin: 0;
     }
 
     .stats-grid {

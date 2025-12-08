@@ -184,14 +184,14 @@
         /* Stat Cards - Fond blanc uniforme */
         .stat-card {
             background: white;
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 16px;
+            padding: 32px 24px;
             box-shadow: 0 4px 12px rgba(45, 35, 32, 0.08);
             transition: all 0.2s;
             border: 2px solid transparent;
             height: 100%;
             display: flex;
-            gap: 12px;
+            gap: 20px;
             align-items: center;
         }
 
@@ -202,21 +202,22 @@
         }
 
         .stat-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 12px;
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.4rem;
+            font-size: 2.2rem;
             background: var(--accent-color);
             color: white;
             margin-bottom: 0;
             box-shadow: 0 4px 12px rgba(168, 109, 55, 0.2);
+            flex-shrink: 0;
         }
 
         .stat-card h3 {
-            font-size: 1.6rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: var(--heading-color);
             margin: 0;
@@ -227,14 +228,14 @@
             font-weight: 600;
             opacity: 0.85;
             margin: 0;
-            font-size: 0.9rem;
+            font-size: 1.05rem;
         }
 
         /* Stats grid - CSS Grid layout for consistent sizing */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
+            gap: 2rem;
             min-height: 50vh;
             align-items: center;
         }
